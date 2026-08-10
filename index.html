@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f3efe7">
+  <title>Carnet Photo — Berlin</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <div class="eyebrow">CARNET PHOTO</div>
+      <h1>Berlin</h1>
+      <p id="countLabel">55 lieux enregistrés</p>
+    </div>
+    <button class="icon-btn" id="installBtn" hidden aria-label="Installer l'application">＋</button>
+  </header>
+
+  <main>
+    <div class="search-wrap"><input id="search" type="search" placeholder="Rechercher un lieu, un quartier…" autocomplete="off"></div>
+    <nav class="tabs" aria-label="Navigation principale">
+      <button class="tab active" data-tab="map">Carte</button>
+      <button class="tab" data-tab="categories">Catégories</button>
+      <button class="tab" data-tab="quarters">Quartiers</button>
+    </nav>
+
+    <section id="mapView" class="view active">
+      <div id="map"></div>
+      <div class="map-status" id="mapStatus">Carte : préparation des positions…</div>
+    </section>
+
+    <section id="categoriesView" class="view">
+      <div id="categoryChips" class="chips"></div>
+      <div id="categoryGrid" class="cards"></div>
+    </section>
+
+    <section id="quartersView" class="view">
+      <div id="quarterChips" class="chips"></div>
+      <div id="quarterGrid" class="cards"></div>
+    </section>
+  </main>
+
+  <dialog id="placeDialog">
+    <button class="close" id="closeDialog" aria-label="Fermer">×</button>
+    <div class="dialog-photo-wrap">
+      <img id="dialogPhoto" class="dialog-photo" alt="">
+      <button id="nextPhoto" class="next-photo" title="Essayer une autre photo">↻ autre photo</button>
+    </div>
+    <div class="dialog-body">
+      <div class="dialog-kicker" id="dialogCategory"></div>
+      <h2 id="dialogName"></h2>
+      <p class="dialog-note" id="dialogNote"></p>
+      <p class="dialog-address" id="dialogAddress"></p>
+      <div class="dialog-actions">
+        <a id="googleLink" target="_blank" rel="noopener">Google Maps</a>
+        <a id="appleLink" target="_blank" rel="noopener">Plans</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
