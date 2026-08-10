@@ -10,7 +10,9 @@ const PLACES = [
     "lat": 52.53031,
     "lng": 13.31861,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://hagerty-media-prod.imgix.net/2025/06/Classic-Remise-Museum-IMG_1407.jpg?auto=format%2Ccompress&fit=crop&h=480&ixlib=php-3.3.0&w=640",
+    "photoLocked": true
   },
   {
     "id": 2,
@@ -23,7 +25,9 @@ const PLACES = [
     "lat": 52.50698,
     "lng": 13.36758,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://hips.hearstapps.com/hmg-prod/images/april-2021-berlin-the-new-national-gallery-at-the-news-photo-1702870356.jpg",
+    "photoLocked": true
   },
   {
     "id": 3,
@@ -36,7 +40,9 @@ const PLACES = [
     "lat": 52.36692,
     "lng": 13.5076,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://ber.berlin-airport.de/de/cafes-shops-service/sgs-poi/406-parkhaus-p8-t1/_jcr_content/root/stage/landscape.coreimg.jpeg/1743013681470/parkhaus-p8.jpeg",
+    "photoLocked": true
   },
   {
     "id": 4,
@@ -49,7 +55,9 @@ const PLACES = [
     "lat": 52.4306,
     "lng": 13.3157,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.designboom.com/twitterimages/uploads/2023/05/mausebunker-designboom-02.jpg",
+    "photoLocked": true
   },
   {
     "id": 5,
@@ -63,7 +71,8 @@ const PLACES = [
     "lng": 13.28833,
     "source": "Liste Maps + vérification V2",
     "photoFile": "2009-07-24-Philologische-Bibliothek-FU-Berlin-A.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 6,
@@ -76,7 +85,9 @@ const PLACES = [
     "lat": 52.5182,
     "lng": 13.37889,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.bundestag.de/resource/image/962122/16x9/2340/1318/fa5df4a26398747f34f84c66578f72de/81068858A09D06E99823E370AAD341E1/jkh_bild.jpg",
+    "photoLocked": true
   },
   {
     "id": 7,
@@ -90,7 +101,8 @@ const PLACES = [
     "lng": 13.370843,
     "source": "Liste Maps + vérification V2",
     "photoFile": "Bundeskanzleramt (Berlin), 150515, ako.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 8,
@@ -104,7 +116,8 @@ const PLACES = [
     "lng": 13.326716,
     "source": "Liste Maps + vérification V2",
     "photoFile": "Berlin-Charlottenburg Straße des 17. Juni TU-Hauptgebäude.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 9,
@@ -117,7 +130,9 @@ const PLACES = [
     "lat": 52.52061,
     "lng": 13.39111,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://bauten.hu-berlin.de/de/grimm/bilder/fotos-architektur/leseterrassen-im-jacob-und-wilhelm-grimm-zentrum-der-hu-berlin-architektur/%40%40images/image-768-5e150cdd74a296de4dc324aca0ce2f42.jpeg",
+    "photoLocked": true
   },
   {
     "id": 10,
@@ -130,7 +145,9 @@ const PLACES = [
     "lat": 52.50862,
     "lng": 13.39827,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1602148676/rg6twtd4nrcsl3fhweqw/oma-laurian-ghinitoiu-axel-springer-campus.jpg",
+    "photoLocked": true
   },
   {
     "id": 11,
@@ -143,7 +160,9 @@ const PLACES = [
     "lat": 52.511008,
     "lng": 13.242808,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.merian.de/uploads/media/jalag-4x3/07/3197-Corbusier-Haus-Iain-Masterton---Alamy-Stock-Photo.jpg?v=1-0",
+    "photoLocked": true
   },
   {
     "id": 12,
@@ -157,7 +176,8 @@ const PLACES = [
     "lng": 13.3228,
     "source": "Liste Maps + vérification V2",
     "photoFile": "Haus Hardenberg.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 13,
@@ -170,7 +190,9 @@ const PLACES = [
     "lat": 52.50634,
     "lng": 13.35385,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://lonelyplanetimages.imgix.net/a/g/hi/t/818a2142ab4b21f292837b227dff0d6a-bauhaus-archiv.jpg",
+    "photoLocked": true
   },
   {
     "id": 14,
@@ -183,7 +205,9 @@ const PLACES = [
     "lat": 52.51769,
     "lng": 13.3443,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1520957071/tkjjxi5ufrm41bbfb8qm/oscar-niemeyer-federico-covre-wohnhochhaus-am-hansaviertel.jpg",
+    "photoLocked": true
   },
   {
     "id": 15,
@@ -196,7 +220,9 @@ const PLACES = [
     "lat": 52.51912,
     "lng": 13.34187,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.berlin.de/binaries/asset/image_assets/3520945/source/1746526004/1000x500/",
+    "photoLocked": true
   },
   {
     "id": 16,
@@ -209,7 +235,9 @@ const PLACES = [
     "lat": 52.50502,
     "lng": 13.27814,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.berlin.de/binaries/asset/image_assets/10246495/source/1772796972/1000x500/",
+    "photoLocked": true
   },
   {
     "id": 17,
@@ -223,7 +251,8 @@ const PLACES = [
     "lng": 13.43133,
     "source": "Liste Maps + vérification V2",
     "photoFile": "KlunkerkranichBerlin.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 18,
@@ -236,7 +265,9 @@ const PLACES = [
     "lat": 52.49763,
     "lng": 13.45366,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://jumpberlin.com/wp-content/uploads/2018/05/Badeschiff3-1067x800.jpeg",
+    "photoLocked": true
   },
   {
     "id": 19,
@@ -249,7 +280,9 @@ const PLACES = [
     "lat": 52.506111,
     "lng": 13.363306,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://oterea.com/wp-content/uploads/2024/10/Patrizia_Shell-Haus.jpg",
+    "photoLocked": true
   },
   {
     "id": 20,
@@ -262,7 +295,9 @@ const PLACES = [
     "lat": 52.52886,
     "lng": 13.48947,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://onthegrid.city/imager/s3_amazonaws_com/onthegrid.city/assets/grid/berlin/lichtenberg/dong-xuan-center/schauschau_dong_xuan_center_1_299006722e285f47655d17d1c9136337.jpg",
+    "photoLocked": true
   },
   {
     "id": 21,
@@ -275,7 +310,9 @@ const PLACES = [
     "lat": 52.50074,
     "lng": 13.40091,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.bpigs.com/files/styles/full_page/public/galleries/stagnes.jpg",
+    "photoLocked": true
   },
   {
     "id": 22,
@@ -289,7 +326,8 @@ const PLACES = [
     "lng": 13.36774,
     "source": "Liste Maps + vérification V2",
     "photoFile": "Kulturforum, Berlin.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 23,
@@ -302,7 +340,9 @@ const PLACES = [
     "lat": 52.5092,
     "lng": 13.3697,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1497691922/joc3g4qlclr1uh5pm6bo/hans-scharoun-fabrice-fouillet-berliner-philharmonie.jpg",
+    "photoLocked": true
   },
   {
     "id": 24,
@@ -315,7 +355,9 @@ const PLACES = [
     "lat": 52.509419,
     "lng": 13.369053,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://static.where-e.com/Germany/Berlin/Kammermusiksaal-Berlin_0a3313118e35c23cb0ca247197272bdf.jpg",
+    "photoLocked": true
   },
   {
     "id": 25,
@@ -328,7 +370,9 @@ const PLACES = [
     "lat": 52.50978,
     "lng": 13.36733,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://aws-tiqets-cdn.imgix.net/images/content/bc4e0fb4174244f38c9ffa7f7768acb6.jpg?auto=format%2Ccompress&fit=crop&q=70",
+    "photoLocked": true
   },
   {
     "id": 26,
@@ -341,7 +385,9 @@ const PLACES = [
     "lat": 52.51018,
     "lng": 13.37352,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.bier-genuss.berlin/wp-content/uploads/2018/11/lindenbraeu-im-sony-center-berlin-600x600.jpg",
+    "photoLocked": true
   },
   {
     "id": 27,
@@ -354,7 +400,9 @@ const PLACES = [
     "lat": 52.473306,
     "lng": 13.401389,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://berlin.adfc.de/fileadmin/Gliederungen/Pedale/berlin/_processed_/e/2/csm_Panorama3_Tempelhofer_Feld3000px_3f86c7376c.jpg",
+    "photoLocked": true
   },
   {
     "id": 28,
@@ -367,7 +415,9 @@ const PLACES = [
     "lat": 52.51117,
     "lng": 13.44304,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://img.redbull.com/images/q_auto%2Cf_auto/redbullcom/2018/09/11/8f9848f7-deaf-4921-8ab9-f1b45cbacaa7/berlin-clubs-berghain",
+    "photoLocked": true
   },
   {
     "id": 29,
@@ -381,7 +431,8 @@ const PLACES = [
     "lng": 13.45456,
     "source": "Liste Maps + vérification V2",
     "photoFile": "RAW Berlin Revaler Straße.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 30,
@@ -394,7 +445,9 @@ const PLACES = [
     "lat": 52.5031,
     "lng": 13.4447,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://miro.medium.com/v2/resize%3Afit%3A1200/1%2AJNdlYHz2cjQaCykQP8ScPw%402x.jpeg",
+    "photoLocked": true
   },
   {
     "id": 31,
@@ -407,7 +460,9 @@ const PLACES = [
     "lat": 52.50173,
     "lng": 13.44566,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://tripplanet.ru/wp-content/uploads/europe/germany/berlin/oberbaum-bridge.jpg",
+    "photoLocked": true
   },
   {
     "id": 32,
@@ -420,7 +475,9 @@ const PLACES = [
     "lat": 52.53806,
     "lng": 13.24747,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.tagesspiegel.de/images/15370551/alternates/FREE_620/1773822765000/ubahn065.jpeg",
+    "photoLocked": true
   },
   {
     "id": 33,
@@ -433,7 +490,9 @@ const PLACES = [
     "lat": 52.537222,
     "lng": 13.2625,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.bahnbilder.de/1200/sehr-industriell-wirken-zeichnungen-auf-1062830.jpg",
+    "photoLocked": true
   },
   {
     "id": 34,
@@ -447,7 +506,8 @@ const PLACES = [
     "lng": 13.39711,
     "source": "Liste Maps + vérification V2",
     "photoFile": "James-Simon-Galerie.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 35,
@@ -460,7 +520,9 @@ const PLACES = [
     "lat": 52.490278,
     "lng": 13.314444,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.bahnbilder.de/1200/die-u-bahn-station-fehrbelliner-platz-1063187.jpg",
+    "photoLocked": true
   },
   {
     "id": 36,
@@ -473,7 +535,9 @@ const PLACES = [
     "lat": 52.520306,
     "lng": 13.377806,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Marie-Elisabeth-L%C3%BCders-Haus%2C_Berlin-Mitte%2C_160328%2C_ako.jpg",
+    "photoLocked": true
   },
   {
     "id": 37,
@@ -486,7 +550,9 @@ const PLACES = [
     "lat": 52.52055,
     "lng": 13.3774,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.architecturalsteelprofiles.com/wp-content/uploads/2021/05/M-E-Luders-Haus-structure-1.jpg",
+    "photoLocked": true
   },
   {
     "id": 38,
@@ -499,7 +565,9 @@ const PLACES = [
     "lat": 52.51874,
     "lng": 13.36485,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.hkw.de/magnoliaPublic/.imaging/focalpoint/_WIDTH_x_HEIGHT_/dam/jcr%3Aae56303d-9c23-4ea9-a9b3-ded7b23104ca/haus-der-kulturen-der-welt-09.jpg",
+    "photoLocked": true
   },
   {
     "id": 39,
@@ -512,7 +580,9 @@ const PLACES = [
     "lat": 52.520278,
     "lng": 13.374722,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://files.structurae.net/files/photos/1/paul-lobe-haus_westseite_frontalansicht_berlin-mitte_151223_ako.jpg",
+    "photoLocked": true
   },
   {
     "id": 40,
@@ -526,7 +596,8 @@ const PLACES = [
     "lng": 13.36922,
     "source": "Liste Maps + vérification V2",
     "photoFile": "Cube Berlin.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 41,
@@ -539,7 +610,9 @@ const PLACES = [
     "lat": 52.461389,
     "lng": 13.324444,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://files.structurae.net/files/photos/2055/p4120120.jpg",
+    "photoLocked": true
   },
   {
     "id": 42,
@@ -552,7 +625,9 @@ const PLACES = [
     "lat": 52.505806,
     "lng": 13.311889,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://berliner-zeitung.imgix.net/2022/10/06/002dcd1d-d854-4305-aeda-ce2d964dc9c6.jpeg?auto=compress&auto=format&fit=max&w=1080",
+    "photoLocked": true
   },
   {
     "id": 43,
@@ -565,7 +640,9 @@ const PLACES = [
     "lat": 52.506694,
     "lng": 13.328306,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://grimshaw.global/assets/crops/Crop.f5e7927b.91007_n228_a3.jpg",
+    "photoLocked": true
   },
   {
     "id": 44,
@@ -578,7 +655,9 @@ const PLACES = [
     "lat": 52.504389,
     "lng": 13.280611,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.berlin.de/binaries/asset/image_assets/1948612/source/1320852406/1000x500/",
+    "photoLocked": true
   },
   {
     "id": 45,
@@ -591,7 +670,9 @@ const PLACES = [
     "lat": 52.5164,
     "lng": 13.4641,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://image.bz-berlin.de/data/uploads/2025/05/minimal_bar_16i9-1.jpg?impolicy=article&imwidth=992",
+    "photoLocked": true
   },
   {
     "id": 46,
@@ -604,7 +685,9 @@ const PLACES = [
     "lat": 52.524022,
     "lng": 13.374372,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.brillux.ch/fileadmin/redaktion/bilder/service/referenzen/sonstige_oeffentliche_gebauede/Alexanderufer_Berlin/BX_Berlin-Alexanderufer-02.jpg",
+    "photoLocked": true
   },
   {
     "id": 47,
@@ -618,7 +701,8 @@ const PLACES = [
     "lng": 13.3557,
     "source": "Liste Maps + vérification V2",
     "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_1_1.webp",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 48,
@@ -632,7 +716,8 @@ const PLACES = [
     "lng": 13.41255,
     "source": "Liste Maps + vérification V2",
     "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_2_1.webp",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 49,
@@ -645,7 +730,9 @@ const PLACES = [
     "lat": 52.50861,
     "lng": 13.38713,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://cms.museumsdienst.berlin/imager/mediafiles/gomus/museums/383168/11-02_E-Werk_Mauerstrasse_Copyright_Andreas_Nenninger__Photography_e7c665d712ec67dfe3f3524f4c64cbe9.jpg",
+    "photoLocked": true
   },
   {
     "id": 50,
@@ -658,7 +745,9 @@ const PLACES = [
     "lat": 52.462745,
     "lng": 13.509259,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://kaosberlin.de/wp-content/uploads/slider/cache/5125dcabbc39dcafa65310bef15bbcc7/Copyright_by_David_Dollmann_Copyright_by_David_Dollmann_2017.12.06-Kaos-Hallenbilder-Mehrfachbelichtung2519.jpg",
+    "photoLocked": true
   },
   {
     "id": 51,
@@ -671,7 +760,9 @@ const PLACES = [
     "lat": 52.5059534,
     "lng": 13.4324698,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.tagesspiegel.de/images/11696681/alternates/BASE_4_3_W1000/1716469901000/kioski-ritterstra-e.jpeg",
+    "photoLocked": true
   },
   {
     "id": 52,
@@ -684,7 +775,9 @@ const PLACES = [
     "lat": 52.5108,
     "lng": 13.3999,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://architectuul.com/lib/content/2449_large.jpg",
+    "photoLocked": true
   },
   {
     "id": 53,
@@ -697,7 +790,9 @@ const PLACES = [
     "lat": 52.49786,
     "lng": 13.35973,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.anneliwest.de/uploads/fotos/Das-kleine-GRosz-Museum/_1600x1081_crop_center-center/das-kleine-grosz-museum-berlin-39.jpg",
+    "photoLocked": true
   },
   {
     "id": 54,
@@ -711,7 +806,8 @@ const PLACES = [
     "lng": 13.4125,
     "source": "Liste Maps + vérification V2",
     "photoFile": "Berlin - Berolinahaus.jpg",
-    "photoMode": "replacement"
+    "photoMode": "fixed",
+    "photoLocked": true
   },
   {
     "id": 55,
@@ -724,7 +820,9 @@ const PLACES = [
     "lat": 52.5149,
     "lng": 13.60363,
     "source": "Liste Maps + vérification V2",
-    "photoMode": "legacy"
+    "photoMode": "fixed",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kirche_Heiliger_Martin_Kaulsdorf3.JPG",
+    "photoLocked": true
   },
   {
     "id": 56,
@@ -737,7 +835,9 @@ const PLACES = [
     "lat": 52.479808,
     "lng": 13.313236,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.5.ua/media/pictures/original/290565.jpg?t=1720346192",
+    "photoLocked": true
   },
   {
     "id": 57,
@@ -750,7 +850,9 @@ const PLACES = [
     "lat": 52.501889,
     "lng": 13.342806,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Wittenbergplatz_Berlin_U-Bahnhof_1.jpg",
+    "photoLocked": true
   },
   {
     "id": 58,
@@ -763,7 +865,9 @@ const PLACES = [
     "lat": 52.497368,
     "lng": 13.240597,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://mapurbex-storage.fly.storage.tigris.dev/Berlin-01K9PG101YN7JN59A3FHM94GH1.jpg",
+    "photoLocked": true
   },
   {
     "id": 59,
@@ -776,7 +880,9 @@ const PLACES = [
     "lat": 52.517889,
     "lng": 13.346111,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.bruecke-museum.de/images/DS_1a.jpg?w=2000",
+    "photoLocked": true
   },
   {
     "id": 60,
@@ -789,7 +895,9 @@ const PLACES = [
     "lat": 52.512639,
     "lng": 13.321889,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://berliner-zeitung.imgix.net/2023/06/23/c18f9e35-9ac5-4a1a-a248-0ddc36031dc6.jpeg?auto=compress&auto=format&fit=max&rect=0%2C3%2C2835%2C1890&w=1880",
+    "photoLocked": true
   },
   {
     "id": 61,
@@ -802,7 +910,9 @@ const PLACES = [
     "lat": 52.505389,
     "lng": 13.336194,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.area-arch.it/wp-content/uploads/sites/6/2024/01/UAU_collectiv_bikini_berlin_23-1024x663.jpg",
+    "photoLocked": true
   },
   {
     "id": 62,
@@ -816,7 +926,9 @@ const PLACES = [
     "lng": 13.3327,
     "source": "Ajout V2",
     "photoFile": "Berlin - Upper West.jpg",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.german-architects.com/images/CmsPageElementImage/61/26/38/589744f9d874495aaf4e48580ab566b6/589744f9d874495aaf4e48580ab566b6.f5fb7444.jpg",
+    "photoLocked": true
   },
   {
     "id": 63,
@@ -829,7 +941,9 @@ const PLACES = [
     "lat": 52.54569,
     "lng": 13.36628,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://weareplaygrounds.nl/content/uploads/2025/04/silent_green_header-1000x563.png",
+    "photoLocked": true
   },
   {
     "id": 64,
@@ -842,7 +956,9 @@ const PLACES = [
     "lat": 52.4943,
     "lng": 13.4947,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.proaudio.de/images/stories/reports/holoplot_dark-matter/IMG_1813.jpg",
+    "photoLocked": true
   },
   {
     "id": 65,
@@ -855,7 +971,9 @@ const PLACES = [
     "lat": 52.5177,
     "lng": 13.3967,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.dhm.de/blog/wp-content/uploads/2023/07/09_DHM_Ausstellungshalle-c-Ulrich-Schwarz.jpg",
+    "photoLocked": true
   },
   {
     "id": 66,
@@ -868,7 +986,9 @@ const PLACES = [
     "lat": 52.563592,
     "lng": 13.461189,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://static.wixstatic.com/media/d94012_6665337fb4b54a70a57fa73b5f515da5~mv2.jpg/v1/fill/w_980%2Ch_654%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/d94012_6665337fb4b54a70a57fa73b5f515da5~mv2.jpg",
+    "photoLocked": true
   },
   {
     "id": 67,
@@ -881,7 +1001,9 @@ const PLACES = [
     "lat": 52.50358,
     "lng": 13.45853,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.berlin-cuisine.com/media/img_820_533/berlincuisine_napoleonkomplex_eventloaction_1.jpg",
+    "photoLocked": true
   },
   {
     "id": 68,
@@ -895,7 +1017,9 @@ const PLACES = [
     "lng": 13.37648,
     "source": "Ajout V2",
     "photoFile": "Kühlhaus am Gleisdreieck, Luckenwalder Straße 3, Berlin-Kreuzberg-40660.jpg",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://denkmaldatenbank.berlin.de/media/uploads/Kre/01/09031193a.jpg",
+    "photoLocked": true
   },
   {
     "id": 69,
@@ -908,7 +1032,9 @@ const PLACES = [
     "lat": 52.46659,
     "lng": 13.36532,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://natural-touring.de/wp-content/gallery/malzfabrik/11.jpg",
+    "photoLocked": true
   },
   {
     "id": 70,
@@ -921,7 +1047,9 @@ const PLACES = [
     "lat": 52.510806,
     "lng": 13.419806,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://berlintechnonarrative.com/images/tresor%20%20batiment.jpg",
+    "photoLocked": true
   },
   {
     "id": 71,
@@ -934,7 +1062,9 @@ const PLACES = [
     "lat": 52.49867,
     "lng": 13.35665,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://urban-nation.com/wp-content/uploads/2020/07/2BP5960_A-1536x1022.jpg",
+    "photoLocked": true
   },
   {
     "id": 72,
@@ -947,7 +1077,9 @@ const PLACES = [
     "lat": 52.5047,
     "lng": 13.4478,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.grossmann-berger.de/media/g-b/xl/5301cabe-f83a-4b5a-bd4d-cdd36ac6a14e.jpg",
+    "photoLocked": true
   },
   {
     "id": 73,
@@ -960,7 +1092,9 @@ const PLACES = [
     "lat": 52.5289,
     "lng": 13.36919,
     "source": "Ajout V2",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.dreso.com/fileadmin/media/Bilder_aus_DAM/Projekte/009-01169_03_Quartier_Heidestrasse_cmyk.jpg",
+    "photoLocked": true
   },
   {
     "id": 74,
@@ -974,7 +1108,9 @@ const PLACES = [
     "lng": 13.401002,
     "source": "Ajout V2",
     "kind": "hotel",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://media-cdn.holidaycheck.com/ugc/images/12ca2e5f-6001-3f7c-a0c9-026ebd6daf83",
+    "photoLocked": true
   },
   {
     "id": 75,
@@ -988,6 +1124,8 @@ const PLACES = [
     "lng": 13.27079,
     "source": "Ajout V2",
     "kind": "work",
-    "photoMode": "new"
+    "photoMode": "fixed",
+    "photoUrl": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/spazieren-und-wandern/kiezspaziergaenge/palais_messe_berlin_2023.jpg",
+    "photoLocked": true
   }
 ];

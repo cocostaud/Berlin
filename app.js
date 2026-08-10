@@ -8,16 +8,17 @@ const curatedImageIndex=JSON.parse(localStorage.getItem('berlin-v2-photo-index')
 const CATEGORIES=[...new Set(PLACES.map(p=>p.category))].sort((a,b)=>a.localeCompare(b,'fr'));
 const QUARTERS=[...new Set(PLACES.map(p=>p.quarter))].sort((a,b)=>a.localeCompare(b,'fr'));
 const CATEGORY_ICONS={
-  'Architecture & photo':'◩',
-  'Culture & musées':'▣',
-  'Métro & transport':'Ⓜ',
+  'Architecture & photo':'📷',
+  'Culture & musées':'🏛️',
+  'Métro & transport':'🚇',
   'Cafés & bars':'☕',
   'Manger & boire':'🍴',
   'Quartiers & ambiances':'◎',
-  'Auto & insolite':'◆',
-  'Repères du séjour':'⌖'
+  'Auto & insolite':'🚗',
+  'Repères du séjour':'📍'
 };
 function categoryIcon(cat){return CATEGORY_ICONS[cat]||'•';}
+function categoryClass(cat){return ({'Architecture & photo':'architecture','Culture & musées':'culture','Métro & transport':'metro','Cafés & bars':'cafe','Manger & boire':'food','Quartiers & ambiances':'ambiance','Auto & insolite':'auto','Repères du séjour':'repere'})[cat]||'spot';}
 
 
 function escapeHtml(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
@@ -30,8 +31,16 @@ function resetFilters(){activeCategory='Tous';activeQuarter='Tous';searchText=''
 function renderActiveFilters(){const arr=[];if(activeCategory!=='Tous')arr.push(`Catégorie : ${activeCategory}`);if(activeQuarter!=='Tous')arr.push(`Quartier : ${activeQuarter}`);if(searchText)arr.push(`Recherche : “${searchText}”`);const el=$('#activeFilters');el.hidden=!arr.length;el.innerHTML=arr.map(x=>`<span>${escapeHtml(x)}</span>`).join('')+(arr.length?'<button id="inlineReset">Tout afficher</button>':'');if(arr.length)$('#inlineReset').onclick=resetFilters;}
 function card(p){const el=document.createElement('article');el.className='card';el.innerHTML=`<div class="photo-shell"><img alt="${escapeHtml(p.name)}" loading="lazy"><div class="mini-photo-state"></div></div><div class="card-body"><div class="card-category"><span class="cat-icon">${categoryIcon(p.category)}</span>${escapeHtml(p.category)}</div><h3>${escapeHtml(p.name)}</h3><div class="card-meta">${escapeHtml(p.quarter)}</div></div>`;el.onclick=()=>openPlace(p);loadPhoto(p,el.querySelector('img'),el.querySelector('.mini-photo-state'));return el;}
 function grouped(holder,key,filterSetter){const rows=baseFilteredPlaces().filter(p=>key==='category'?(activeQuarter==='Tous'||p.quarter===activeQuarter):(activeCategory==='Tous'||p.category===activeCategory));const mapGroups=new Map();rows.forEach(p=>{const k=p[key];if(!mapGroups.has(k))mapGroups.set(k,[]);mapGroups.get(k).push(p)});holder.innerHTML='';[...mapGroups.entries()].sort(([a],[b])=>a.localeCompare(b,'fr')).forEach(([name,items])=>{const section=document.createElement('section');section.className='group';section.innerHTML=`<div class="group-head"><div><h3>${key==='category'?`<span class="group-icon">${categoryIcon(name)}</span>`:''}${escapeHtml(name)}</h3><span>${items.length} lieu${items.length>1?'x':''}</span></div><button>Voir sur la carte</button></div><div class="grid"></div>`;section.querySelector('button').onclick=()=>filterSetter(name,true);const grid=section.querySelector('.grid');items.forEach(p=>grid.appendChild(card(p)));holder.appendChild(section)});if(!rows.length)holder.innerHTML='<div class="empty">Aucun lieu avec ces filtres.</div>';}
-function renderAll(){const fp=filteredPlaces();$('#countLabel').textContent=`${fp.length} lieu${fp.length>1?'x':''} affiché${fp.length>1?'s':''} · ${PLACES.length} au total`;renderActiveFilters();grouped($('#categoryGroups'),'category',setCategory);grouped($('#quarterGroups'),'quarter',setQuarter);if(map)renderMarkers();}
-function markerIcon(p){const special=p.kind==='hotel'?'hotel':p.kind==='work'?'work':'spot';const symbol=p.kind==='hotel'?'⌂':p.kind==='work'?'◆':categoryIcon(p.category);return L.divIcon({className:'custom-marker-wrap',html:`<div class="custom-marker ${special}">${symbol}</div>`,iconSize:[28,34],iconAnchor:[14,30],popupAnchor:[0,-27]});}
+
+function renderMapCategoryFilters(){
+  const holder=$('#mapCategoryFilters'); if(!holder)return;
+  const cats=['Tous',...CATEGORIES];
+  holder.innerHTML=cats.map(cat=>`<button class="filter-chip ${activeCategory===cat?'active':''}" data-cat="${escapeHtml(cat)}">${cat==='Tous'?'◎':categoryIcon(cat)} <span>${cat==='Tous'?'Tout':escapeHtml(cat)}</span></button>`).join('');
+  holder.querySelectorAll('.filter-chip').forEach(b=>b.onclick=()=>{activeCategory=b.dataset.cat;renderAll();fitVisible(true);});
+}
+
+function renderAll(){const fp=filteredPlaces();renderMapCategoryFilters();$('#countLabel').textContent=`${fp.length} lieu${fp.length>1?'x':''} affiché${fp.length>1?'s':''} · ${PLACES.length} au total`;renderActiveFilters();grouped($('#categoryGroups'),'category',setCategory);grouped($('#quarterGroups'),'quarter',setQuarter);if(map)renderMarkers();}
+function markerIcon(p){const special=p.kind==='hotel'?'hotel':p.kind==='work'?'work':categoryClass(p.category);const symbol=p.kind==='hotel'?'🛏️':p.kind==='work'?'💼':categoryIcon(p.category);return L.divIcon({className:'custom-marker-wrap',html:`<div class="custom-marker ${special}"><span>${symbol}</span></div>`,iconSize:[32,38],iconAnchor:[16,34],popupAnchor:[0,-30]});}
 function initMap(){map=L.map('map',{zoomControl:true}).setView([52.52,13.405],11);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);markerLayer=L.layerGroup().addTo(map);renderMarkers();fitVisible(true);}
 function renderMarkers(){if(!markerLayer)return;markerLayer.clearLayers();const fp=filteredPlaces();fp.forEach(p=>{const m=L.marker([p.lat,p.lng],{icon:markerIcon(p)}).addTo(markerLayer);m.bindPopup(`<div class="popup-name">${escapeHtml(p.name)}</div><div class="popup-cat">${escapeHtml(p.category)} · ${escapeHtml(p.quarter)}</div><button class="popup-open" onclick="window.openPlaceById(${p.id})">Voir la fiche</button>`)});$('#mapStatus').textContent=`Carte : ${fp.length}/${fp.length} lieux affichés · ${PLACES.length}/${PLACES.length} positionnés`;}
 function fitVisible(force=false){const fp=filteredPlaces();if(!fp.length)return;const key=fp.map(p=>p.id).join(',');if(!force&&key===lastFitKey)return;lastFitKey=key;const bounds=L.latLngBounds(fp.map(p=>[p.lat,p.lng]));if(fp.length===1)map.setView([fp[0].lat,fp[0].lng],15);else map.fitBounds(bounds,{padding:[28,28],maxZoom:14});}
@@ -66,7 +75,14 @@ async function curatedCommonsImages(p){
   }catch(e){}
   curatedImageCache.set(p.id,list); return list;
 }
-async function photosFor(p){return p.photoMode==='legacy'?legacyCommonsImages(p):curatedCommonsImages(p);}
+async function photosFor(p){
+  if(p.photoMode==='fixed'){
+    if(p.photoUrl)return [p.photoUrl];
+    if(p.photoFile)return [commonsFileUrl(p.photoFile)];
+    return [];
+  }
+  return p.photoMode==='legacy'?legacyCommonsImages(p):curatedCommonsImages(p);
+}
 function indexStoreFor(p){return p.photoMode==='legacy'?legacyImageIndex:curatedImageIndex;}
 function indexKeyFor(p){return p.photoMode==='legacy'?'berlin-photo-index':'berlin-v2-photo-index';}
 async function loadPhoto(p,img,state,forceIndex){
@@ -86,8 +102,8 @@ async function loadPhoto(p,img,state,forceIndex){
   };
   tryOne();
 }
-async function openPlace(p){currentPlace=p;$('#dialogName').textContent=p.name;$('#dialogCategory').textContent=`${p.category} · ${p.quarter}`;$('#dialogNote').textContent=p.note;$('#dialogAddress').textContent=p.address;const dest=`${p.lat},${p.lng}`;$('#googleLink').href=`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}`;$('#appleLink').href=`https://maps.apple.com/?daddr=${encodeURIComponent(dest)}`;const img=$('#dialogPhoto');img.alt=p.name;img.src='';await loadPhoto(p,img,$('#photoState'));$('#placeDialog').showModal();}
-$('#nextPhoto').onclick=async()=>{if(!currentPlace)return;const imgs=await photosFor(currentPlace);if(!imgs.length)return;const store=indexStoreFor(currentPlace);store[currentPlace.id]=((store[currentPlace.id]||0)+1)%imgs.length;localStorage.setItem(indexKeyFor(currentPlace),JSON.stringify(store));loadPhoto(currentPlace,$('#dialogPhoto'),$('#photoState'),store[currentPlace.id]);};
+async function openPlace(p){currentPlace=p;$('#dialogName').textContent=p.name;$('#dialogCategory').textContent=`${p.category} · ${p.quarter}`;$('#dialogNote').textContent=p.note;$('#dialogAddress').textContent=p.address;const dest=`${p.lat},${p.lng}`;$('#googleLink').href=`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}`;$('#appleLink').href=`https://maps.apple.com/?daddr=${encodeURIComponent(dest)}`;const img=$('#dialogPhoto');img.alt=p.name;img.src='';$('#nextPhoto').hidden=(p.photoMode==='fixed');await loadPhoto(p,img,$('#photoState'));$('#placeDialog').showModal();}
+$('#nextPhoto').onclick=async()=>{if(!currentPlace||currentPlace.photoMode==='fixed')return;const imgs=await photosFor(currentPlace);if(!imgs.length)return;const store=indexStoreFor(currentPlace);store[currentPlace.id]=((store[currentPlace.id]||0)+1)%imgs.length;localStorage.setItem(indexKeyFor(currentPlace),JSON.stringify(store));loadPhoto(currentPlace,$('#dialogPhoto'),$('#photoState'),store[currentPlace.id]);};
 $('#closeDialog').onclick=()=>$('#placeDialog').close();$('#placeDialog').addEventListener('click',e=>{if(e.target===$('#placeDialog'))$('#placeDialog').close()});
 $('#search').addEventListener('input',e=>{searchText=e.target.value.trim().toLowerCase();renderAll();if(activeTab==='map')fitVisible(true)});$('#clearFilters').onclick=resetFilters;$$('.tab').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));$('#fitBtn').onclick=()=>fitVisible(true);$('#locateBtn').onclick=()=>{if(!navigator.geolocation){alert('Localisation non disponible.');return}navigator.geolocation.getCurrentPosition(pos=>{const ll=[pos.coords.latitude,pos.coords.longitude];if(userMarker)userMarker.remove();userMarker=L.circleMarker(ll,{radius:8,weight:3,fillOpacity:.8}).addTo(map).bindPopup('Vous êtes ici').openPopup();map.setView(ll,14);},()=>alert('Impossible d’obtenir votre position.'));};
 let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('#installBtn').hidden=false});$('#installBtn').onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$('#installBtn').hidden=true}};

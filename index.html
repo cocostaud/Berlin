@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#151515">
-  <title>Carnet photo · Berlin — V3</title>
+  <title>Carnet photo · Berlin — V4</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icon-180.png">
   <link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://tile.openstreetmap.org">
@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="topbar">
-  <div><div class="eyebrow">CARNET PHOTO <span class="beta">V3</span></div><h1>Berlin</h1><div id="countLabel" class="count"></div></div>
+  <div><div class="eyebrow">CARNET PHOTO <span class="beta">V4</span></div><h1>Berlin</h1><div id="countLabel" class="count"></div></div>
   <button id="installBtn" class="install" hidden>Installer</button>
 </header>
 <div class="search-wrap"><input id="search" type="search" placeholder="Rechercher un lieu, quartier, catégorie…" autocomplete="off"><button id="clearFilters" class="ghost">Réinitialiser</button></div>
@@ -22,10 +22,10 @@
   <button class="tab active" data-tab="map">Carte</button><button class="tab" data-tab="categories">Catégories</button><button class="tab" data-tab="quarters">Quartiers</button>
 </nav>
 <main>
-<section id="mapView" class="view active"><div class="map-tools"><button id="fitBtn">Voir tous</button><button id="locateBtn">Me localiser</button></div><div id="map"></div><div id="mapStatus" class="status"></div></section>
+<section id="mapView" class="view active"><div id="mapCategoryFilters" class="filter-chips"></div><div class="map-tools"><button id="fitBtn">Voir tous</button><button id="locateBtn">Me localiser</button></div><div id="map"></div><div id="mapStatus" class="status"></div></section>
 <section id="categoriesView" class="view"><div class="section-intro"><h2>Explorer par catégorie</h2><p>Les lieux sont réellement regroupés par type. Touchez « Voir sur la carte » pour n’afficher que ce groupe.</p></div><div id="categoryGroups"></div></section>
 <section id="quartersView" class="view"><div class="section-intro"><h2>Explorer par quartier</h2><p>Les lieux sont regroupés géographiquement, indépendamment de leur catégorie.</p></div><div id="quarterGroups"></div></section>
 </main>
-<dialog id="placeDialog"><button id="closeDialog" class="close" aria-label="Fermer">×</button><div class="dialog-photo-wrap"><img id="dialogPhoto" alt=""><div id="photoState" class="photo-state">Chargement de la photo…</div></div><div class="dialog-body"><div id="dialogCategory" class="card-category"></div><h2 id="dialogName"></h2><p id="dialogNote"></p><p id="dialogAddress" class="address"></p><div class="actions"><a id="googleLink" target="_blank" rel="noopener">Itinéraire Google Maps</a><a id="appleLink" target="_blank" rel="noopener">Itinéraire Plans</a></div><button id="nextPhoto" class="secondary">Autre photo</button><div class="photo-credit">Photos : Wikimedia Commons quand disponibles. Une image manquante est signalée au lieu d’afficher un lieu sans rapport.</div></div></dialog>
+<dialog id="placeDialog"><button id="closeDialog" class="close" aria-label="Fermer">×</button><div class="dialog-photo-wrap"><img id="dialogPhoto" alt=""><div id="photoState" class="photo-state">Chargement de la photo…</div></div><div class="dialog-body"><div id="dialogCategory" class="card-category"></div><h2 id="dialogName"></h2><p id="dialogNote"></p><p id="dialogAddress" class="address"></p><div class="actions"><a id="googleLink" target="_blank" rel="noopener">Itinéraire Google Maps</a><a id="appleLink" target="_blank" rel="noopener">Itinéraire Plans</a></div><button id="nextPhoto" class="secondary" hidden>Autre photo</button><div class="photo-credit">Photos figées pour les 75 lieux ; aucune recherche d’image automatique.</div></div></dialog>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="data.js"></script><script src="app.js"></script>
 </body></html>

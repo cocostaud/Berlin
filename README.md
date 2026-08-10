@@ -1,13 +1,17 @@
-# Carnet photo Berlin — V3
+# Berlin — Carnet Photo V4
 
-Version préparée après revue des 75 lieux.
+Version corrective du carnet photo Berlin pour GitHub Pages.
 
-- 75 lieux avec coordonnées
-- catégories et quartiers séparés
-- pictogrammes par catégorie
-- hôtel ibis Styles Berlin Mitte et Messe Berlin comme repères spécifiques
-- carte Leaflet + filtres + recherche
-- photos : URLs/fichiers imposés quand disponibles, sinon recherche Wikimedia ciblée avec garde-fou et placeholder en cas d’échec
-- Napoleon Komplex : ne pas utiliser d’image du Berghain ; la recherche reste ciblée sur le nom/adresse
+## Corrections V4
+- 75 lieux / 75 coordonnées.
+- Carte Leaflet et filtres Carte / Catégories / Quartiers.
+- Catégories réellement regroupées et quartiers réellement regroupés.
+- Pictogrammes distincts par catégorie, dans l’esprit de l’application Hambourg.
+- Repères du séjour distincts : ibis Styles Berlin Mitte et Messe Berlin.
+- 75/75 lieux ont désormais une photo figée (URL ou fichier Wikimedia précis) : aucune recherche d’image automatique au chargement.
+- Malzfabrik corrigée (photo du lieu, plus de résultat sans rapport).
+- Napoleon Komplex corrigé avec une photo provenant d’une page dédiée au lieu.
+- Cache PWA incrémenté (`berlin-v4-final-20260810`).
 
-Pour GitHub Pages, remplacer les fichiers de la racine du dépôt Berlin par le contenu de ce dossier.
+## Mise en ligne
+Remplacer le contenu du dépôt GitHub `Berlin` par les fichiers de ce dossier, attendre la fin du workflow GitHub Pages puis recharger la page. Sur iPhone, si une ancienne version persiste, fermer l’app installée puis la rouvrir après le déploiement.
