@@ -9,7 +9,8 @@ const PLACES = [
     "photoQuery": "Classic Remise Berlin",
     "lat": 52.53031,
     "lng": 13.31861,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@ const PLACES = [
     "photoQuery": "Neue Nationalgalerie Berlin",
     "lat": 52.50698,
     "lng": 13.36758,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@ const PLACES = [
     "photoQuery": "P8 Berlin Brandenburg Airport architecture",
     "lat": 52.36692,
     "lng": 13.5076,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@ const PLACES = [
     "photoQuery": "Mäusebunker Berlin",
     "lat": 52.4306,
     "lng": 13.3157,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 5,
@@ -58,7 +62,8 @@ const PLACES = [
     "lat": 52.45186,
     "lng": 13.28833,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "2009-07-24-Philologische-Bibliothek-FU-Berlin-A.jpg"
+    "photoFile": "2009-07-24-Philologische-Bibliothek-FU-Berlin-A.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 6,
@@ -70,7 +75,8 @@ const PLACES = [
     "photoQuery": "Jakob Kaiser Haus Berlin",
     "lat": 52.5182,
     "lng": 13.37889,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 7,
@@ -83,7 +89,8 @@ const PLACES = [
     "lat": 52.520358,
     "lng": 13.370843,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "Bundeskanzleramt (Berlin), 150515, ako.jpg"
+    "photoFile": "Bundeskanzleramt (Berlin), 150515, ako.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 8,
@@ -96,7 +103,8 @@ const PLACES = [
     "lat": 52.512852,
     "lng": 13.326716,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "Berlin-Charlottenburg Straße des 17. Juni TU-Hauptgebäude.jpg"
+    "photoFile": "Berlin-Charlottenburg Straße des 17. Juni TU-Hauptgebäude.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 9,
@@ -108,7 +116,8 @@ const PLACES = [
     "photoQuery": "Grimm Zentrum Berlin library",
     "lat": 52.52061,
     "lng": 13.39111,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 10,
@@ -120,7 +129,8 @@ const PLACES = [
     "photoQuery": "Axel Springer Neubau Berlin OMA",
     "lat": 52.50862,
     "lng": 13.39827,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 11,
@@ -132,7 +142,8 @@ const PLACES = [
     "photoQuery": "Corbusierhaus Berlin Unite habitation",
     "lat": 52.511008,
     "lng": 13.242808,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 12,
@@ -145,7 +156,8 @@ const PLACES = [
     "lat": 52.5109,
     "lng": 13.3228,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "Haus Hardenberg.jpg"
+    "photoFile": "Haus Hardenberg.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 13,
@@ -157,7 +169,8 @@ const PLACES = [
     "photoQuery": "Bauhaus Archiv Berlin",
     "lat": 52.50634,
     "lng": 13.35385,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 14,
@@ -169,7 +182,8 @@ const PLACES = [
     "photoQuery": "Oscar Niemeyer Haus Berlin Hansaviertel",
     "lat": 52.51769,
     "lng": 13.3443,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 15,
@@ -181,7 +195,8 @@ const PLACES = [
     "photoQuery": "Hansaviertel Berlin Interbau",
     "lat": 52.51912,
     "lng": 13.34187,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 16,
@@ -193,7 +208,8 @@ const PLACES = [
     "photoQuery": "Funkturm Berlin",
     "lat": 52.50502,
     "lng": 13.27814,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 17,
@@ -206,7 +222,8 @@ const PLACES = [
     "lat": 52.48207,
     "lng": 13.43133,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "KlunkerkranichBerlin.jpg"
+    "photoFile": "KlunkerkranichBerlin.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 18,
@@ -218,7 +235,8 @@ const PLACES = [
     "photoQuery": "Badeschiff Berlin",
     "lat": 52.49763,
     "lng": 13.45366,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 19,
@@ -230,7 +248,8 @@ const PLACES = [
     "photoQuery": "Shell Haus Berlin",
     "lat": 52.506111,
     "lng": 13.363306,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 20,
@@ -242,7 +261,8 @@ const PLACES = [
     "photoQuery": "Dong Xuan Center Berlin",
     "lat": 52.52886,
     "lng": 13.48947,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 21,
@@ -254,7 +274,8 @@ const PLACES = [
     "photoQuery": "St Agnes Berlin König Galerie",
     "lat": 52.50074,
     "lng": 13.40091,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 22,
@@ -267,7 +288,8 @@ const PLACES = [
     "lat": 52.50846,
     "lng": 13.36774,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "Kulturforum, Berlin.jpg"
+    "photoFile": "Kulturforum, Berlin.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 23,
@@ -279,7 +301,8 @@ const PLACES = [
     "photoQuery": "Berliner Philharmonie Scharoun",
     "lat": 52.5092,
     "lng": 13.3697,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 24,
@@ -291,7 +314,8 @@ const PLACES = [
     "photoQuery": "Kammermusiksaal Berlin architecture",
     "lat": 52.509419,
     "lng": 13.369053,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 25,
@@ -303,7 +327,8 @@ const PLACES = [
     "photoQuery": "Kunstgewerbemuseum Berlin Kulturforum",
     "lat": 52.50978,
     "lng": 13.36733,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 26,
@@ -315,7 +340,8 @@ const PLACES = [
     "photoQuery": "Sony Center Berlin Potsdamer Platz roof",
     "lat": 52.51018,
     "lng": 13.37352,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 27,
@@ -327,7 +353,8 @@ const PLACES = [
     "photoQuery": "Tempelhofer Feld Berlin",
     "lat": 52.473306,
     "lng": 13.401389,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 28,
@@ -339,7 +366,8 @@ const PLACES = [
     "photoQuery": "Berghain Berlin building Am Wriezener Bahnhof",
     "lat": 52.51117,
     "lng": 13.44304,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 29,
@@ -352,7 +380,8 @@ const PLACES = [
     "lat": 52.50708,
     "lng": 13.45456,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "RAW Berlin Revaler Straße.jpg"
+    "photoFile": "RAW Berlin Revaler Straße.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 30,
@@ -364,7 +393,8 @@ const PLACES = [
     "photoQuery": "East Side Gallery Berlin",
     "lat": 52.5031,
     "lng": 13.4447,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 31,
@@ -376,7 +406,8 @@ const PLACES = [
     "photoQuery": "Oberbaumbrücke Berlin",
     "lat": 52.50173,
     "lng": 13.44566,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 32,
@@ -388,7 +419,8 @@ const PLACES = [
     "photoQuery": "U Bahnhof Paulsternstrasse Berlin",
     "lat": 52.53806,
     "lng": 13.24747,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 33,
@@ -400,7 +432,8 @@ const PLACES = [
     "photoQuery": "U Bahnhof Rohrdamm Berlin",
     "lat": 52.537222,
     "lng": 13.2625,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 34,
@@ -413,7 +446,8 @@ const PLACES = [
     "lat": 52.51994,
     "lng": 13.39711,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "James-Simon-Galerie.jpg"
+    "photoFile": "James-Simon-Galerie.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 35,
@@ -425,7 +459,8 @@ const PLACES = [
     "photoQuery": "U Bahnhof Fehrbelliner Platz Berlin",
     "lat": 52.490278,
     "lng": 13.314444,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 36,
@@ -437,7 +472,8 @@ const PLACES = [
     "photoQuery": "Marie Elisabeth Lüders Haus Berlin",
     "lat": 52.520306,
     "lng": 13.377806,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 37,
@@ -449,7 +485,8 @@ const PLACES = [
     "photoQuery": "Marie Elisabeth Lüders Haus Forum Kunst Bundestag Berlin",
     "lat": 52.52055,
     "lng": 13.3774,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 38,
@@ -461,7 +498,8 @@ const PLACES = [
     "photoQuery": "Haus der Kulturen der Welt Berlin",
     "lat": 52.51874,
     "lng": 13.36485,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 39,
@@ -473,7 +511,8 @@ const PLACES = [
     "photoQuery": "Paul Löbe Haus Berlin",
     "lat": 52.520278,
     "lng": 13.374722,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 40,
@@ -486,7 +525,8 @@ const PLACES = [
     "lat": 52.52355,
     "lng": 13.36922,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "Cube Berlin.jpg"
+    "photoFile": "Cube Berlin.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 41,
@@ -498,7 +538,8 @@ const PLACES = [
     "photoQuery": "Bierpinsel Berlin",
     "lat": 52.461389,
     "lng": 13.324444,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 42,
@@ -510,7 +551,8 @@ const PLACES = [
     "photoQuery": "Kant Garagen Berlin",
     "lat": 52.505806,
     "lng": 13.311889,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 43,
@@ -522,7 +564,8 @@ const PLACES = [
     "photoQuery": "Ludwig Erhard Haus Berlin",
     "lat": 52.506694,
     "lng": 13.328306,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 44,
@@ -534,7 +577,8 @@ const PLACES = [
     "photoQuery": "ICC Berlin architecture",
     "lat": 52.504389,
     "lng": 13.280611,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 45,
@@ -546,7 +590,8 @@ const PLACES = [
     "photoQuery": "Minimal Bar Rigaer Straße 31 Berlin",
     "lat": 52.5164,
     "lng": 13.4641,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 46,
@@ -558,7 +603,8 @@ const PLACES = [
     "photoQuery": "Futurium Berlin architecture",
     "lat": 52.524022,
     "lng": 13.374372,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 47,
@@ -571,7 +617,8 @@ const PLACES = [
     "lat": 52.4868,
     "lng": 13.3557,
     "source": "Liste Maps + vérification V2",
-    "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_1_1.webp"
+    "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_1_1.webp",
+    "photoMode": "replacement"
   },
   {
     "id": 48,
@@ -584,7 +631,8 @@ const PLACES = [
     "lat": 52.5405,
     "lng": 13.41255,
     "source": "Liste Maps + vérification V2",
-    "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_2_1.webp"
+    "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_2_1.webp",
+    "photoMode": "replacement"
   },
   {
     "id": 49,
@@ -596,7 +644,8 @@ const PLACES = [
     "photoQuery": "E-Werk Berlin Mauerstraße 79 Deutsche Kinemathek",
     "lat": 52.50861,
     "lng": 13.38713,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 50,
@@ -608,7 +657,8 @@ const PLACES = [
     "photoQuery": "Wilhelminenhofstraße 92 Oberschöneweide KAOS Berlin",
     "lat": 52.462745,
     "lng": 13.509259,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 51,
@@ -620,7 +670,8 @@ const PLACES = [
     "photoQuery": "kioski Köpenicker Straße 20 Berlin K67 kiosk",
     "lat": 52.5059534,
     "lng": 13.4324698,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 52,
@@ -632,7 +683,8 @@ const PLACES = [
     "photoQuery": "K67 Berlin Leipziger Straße 61 kiosk",
     "lat": 52.5108,
     "lng": 13.3999,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 53,
@@ -644,7 +696,8 @@ const PLACES = [
     "photoQuery": "Das kleine Grosz Museum Bülowstraße 18 Berlin",
     "lat": 52.49786,
     "lng": 13.35973,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "replacement"
   },
   {
     "id": 54,
@@ -657,7 +710,8 @@ const PLACES = [
     "lat": 52.5215,
     "lng": 13.4125,
     "source": "Liste Maps + vérification V2",
-    "photoFile": "Berlin - Berolinahaus.jpg"
+    "photoFile": "Berlin - Berolinahaus.jpg",
+    "photoMode": "replacement"
   },
   {
     "id": 55,
@@ -669,7 +723,8 @@ const PLACES = [
     "photoQuery": "St Martin Kirche Berlin Kaulsdorf",
     "lat": 52.5149,
     "lng": 13.60363,
-    "source": "Liste Maps + vérification V2"
+    "source": "Liste Maps + vérification V2",
+    "photoMode": "legacy"
   },
   {
     "id": 56,
@@ -681,7 +736,8 @@ const PLACES = [
     "photoQuery": "U-Bahnhof Heidelberger Platz Berlin",
     "lat": 52.479808,
     "lng": 13.313236,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 57,
@@ -693,7 +749,8 @@ const PLACES = [
     "photoQuery": "U-Bahnhof Wittenbergplatz Berlin",
     "lat": 52.501889,
     "lng": 13.342806,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 58,
@@ -705,7 +762,8 @@ const PLACES = [
     "photoQuery": "Teufelsberg Berlin listening station radomes",
     "lat": 52.497368,
     "lng": 13.240597,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 59,
@@ -717,7 +775,8 @@ const PLACES = [
     "photoQuery": "Akademie der Künste Hanseatenweg Berlin",
     "lat": 52.517889,
     "lng": 13.346111,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 60,
@@ -729,7 +788,8 @@ const PLACES = [
     "photoQuery": "Ernst Reuter Platz Berlin architecture",
     "lat": 52.512639,
     "lng": 13.321889,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 61,
@@ -741,7 +801,8 @@ const PLACES = [
     "photoQuery": "Bikini Berlin building",
     "lat": 52.505389,
     "lng": 13.336194,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 62,
@@ -754,7 +815,8 @@ const PLACES = [
     "lat": 52.5059,
     "lng": 13.3327,
     "source": "Ajout V2",
-    "photoFile": "Berlin - Upper West.jpg"
+    "photoFile": "Berlin - Upper West.jpg",
+    "photoMode": "new"
   },
   {
     "id": 63,
@@ -766,7 +828,8 @@ const PLACES = [
     "photoQuery": "silent green Kulturquartier Berlin",
     "lat": 52.54569,
     "lng": 13.36628,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 64,
@@ -778,7 +841,8 @@ const PLACES = [
     "photoQuery": "DARK MATTER Berlin Köpenicker Chaussee",
     "lat": 52.4943,
     "lng": 13.4947,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 65,
@@ -790,7 +854,8 @@ const PLACES = [
     "photoQuery": "Pei Bau Deutsches Historisches Museum Berlin",
     "lat": 52.5177,
     "lng": 13.3967,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 66,
@@ -802,7 +867,8 @@ const PLACES = [
     "photoQuery": "Motorwerk Berlin Weißensee",
     "lat": 52.563592,
     "lng": 13.461189,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 67,
@@ -814,7 +880,8 @@ const PLACES = [
     "photoQuery": "Napoleon Komplex Berlin",
     "lat": 52.50358,
     "lng": 13.45853,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 68,
@@ -827,7 +894,8 @@ const PLACES = [
     "lat": 52.49965,
     "lng": 13.37648,
     "source": "Ajout V2",
-    "photoFile": "Kühlhaus am Gleisdreieck, Luckenwalder Straße 3, Berlin-Kreuzberg-40660.jpg"
+    "photoFile": "Kühlhaus am Gleisdreieck, Luckenwalder Straße 3, Berlin-Kreuzberg-40660.jpg",
+    "photoMode": "new"
   },
   {
     "id": 69,
@@ -839,7 +907,8 @@ const PLACES = [
     "photoQuery": "Malzfabrik Berlin",
     "lat": 52.46659,
     "lng": 13.36532,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 70,
@@ -851,7 +920,8 @@ const PLACES = [
     "photoQuery": "Kraftwerk Berlin Köpenicker Straße",
     "lat": 52.510806,
     "lng": 13.419806,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 71,
@@ -863,7 +933,8 @@ const PLACES = [
     "photoQuery": "Urban Nation Berlin Bülowstraße",
     "lat": 52.49867,
     "lng": 13.35665,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 72,
@@ -875,7 +946,8 @@ const PLACES = [
     "photoQuery": "Mediaspree Berlin architecture",
     "lat": 52.5047,
     "lng": 13.4478,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 73,
@@ -887,7 +959,8 @@ const PLACES = [
     "photoQuery": "Europacity Berlin Heidestraße architecture",
     "lat": 52.5289,
     "lng": 13.36919,
-    "source": "Ajout V2"
+    "source": "Ajout V2",
+    "photoMode": "new"
   },
   {
     "id": 74,
@@ -900,7 +973,8 @@ const PLACES = [
     "lat": 52.530071,
     "lng": 13.401002,
     "source": "Ajout V2",
-    "kind": "hotel"
+    "kind": "hotel",
+    "photoMode": "new"
   },
   {
     "id": 75,
@@ -913,6 +987,7 @@ const PLACES = [
     "lat": 52.500152,
     "lng": 13.27079,
     "source": "Ajout V2",
-    "kind": "work"
+    "kind": "work",
+    "photoMode": "new"
   }
 ];

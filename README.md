@@ -1,3 +1,9 @@
+# Berlin — Carnet Photo BÊTA 2.2
+
+Correctif carte : ajout d’une feuille de style Leaflet locale de secours pour éviter l’affichage en tuiles dispersées lorsque la CSS du CDN ne se charge pas.
+
+Remplacer tous les fichiers du dépôt GitHub par le contenu de ce dossier, y compris `leaflet-fallback.css`.
+
 # Carnet Photo Berlin — BÊTA 2
 
 Cette version corrige les retours de la première bêta.
