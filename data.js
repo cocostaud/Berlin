@@ -7,9 +7,9 @@ const PLACES = [
     "quarter": "Moabit",
     "note": "Ancien dépôt de tramways rempli de voitures anciennes : métal, verrières et détails mécaniques.",
     "photoQuery": "Classic Remise Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.53031,
+    "lng": 13.31861,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 2,
@@ -19,9 +19,9 @@ const PLACES = [
     "quarter": "Tiergarten",
     "note": "Mies van der Rohe : verre, acier, trame et minimalisme.",
     "photoQuery": "Neue Nationalgalerie Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.50698,
+    "lng": 13.36758,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 3,
@@ -31,9 +31,9 @@ const PLACES = [
     "quarter": "Schönefeld",
     "note": "Structure contemporaine aux abords de BER, intéressante pour les lignes et répétitions.",
     "photoQuery": "P8 Berlin Brandenburg Airport architecture",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.36692,
+    "lng": 13.5076,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 4,
@@ -43,9 +43,9 @@ const PLACES = [
     "quarter": "Lichterfelde",
     "note": "Brutalisme radical, volumes massifs et silhouettes presque dystopiques.",
     "photoQuery": "Mäusebunker Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.4306,
+    "lng": 13.3157,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 5,
@@ -54,10 +54,11 @@ const PLACES = [
     "category": "Architecture & photo",
     "quarter": "Dahlem",
     "note": "La bibliothèque de Norman Foster, surnommée “The Brain”, offre une géométrie organique très graphique.",
-    "photoQuery": "Philological Library Free University Berlin The Brain",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Philologische Bibliothek Freie Universität Berlin Norman Foster The Brain",
+    "lat": 52.45186,
+    "lng": 13.28833,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "2009-07-24-Philologische-Bibliothek-FU-Berlin-A.jpg"
   },
   {
     "id": 6,
@@ -67,9 +68,9 @@ const PLACES = [
     "quarter": "Mitte",
     "note": "Architecture parlementaire contemporaine, passerelles, cours et cadrages sur la Spree.",
     "photoQuery": "Jakob Kaiser Haus Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.5182,
+    "lng": 13.37889,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 7,
@@ -78,10 +79,11 @@ const PLACES = [
     "category": "Architecture & photo",
     "quarter": "Tiergarten",
     "note": "Grands volumes blancs, ouvertures monumentales et perspectives institutionnelles.",
-    "photoQuery": "Bundeskanzleramt Berlin architecture",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Bundeskanzleramt Berlin Willy Brandt Straße",
+    "lat": 52.520358,
+    "lng": 13.370843,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "Bundeskanzleramt (Berlin), 150515, ako.jpg"
   },
   {
     "id": 8,
@@ -90,10 +92,11 @@ const PLACES = [
     "category": "Architecture & photo",
     "quarter": "Charlottenburg",
     "note": "Campus mêlant modernisme, brutalité et grands volumes universitaires.",
-    "photoQuery": "Technische Universität Berlin architecture",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Technische Universität Berlin Hauptgebäude Straße des 17. Juni 135",
+    "lat": 52.512852,
+    "lng": 13.326716,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "Berlin-Charlottenburg Straße des 17. Juni TU-Hauptgebäude.jpg"
   },
   {
     "id": 9,
@@ -103,9 +106,9 @@ const PLACES = [
     "quarter": "Mitte",
     "note": "Bibliothèque très graphique, connue pour son spectaculaire intérieur en gradins.",
     "photoQuery": "Grimm Zentrum Berlin library",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.52061,
+    "lng": 13.39111,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 10,
@@ -115,9 +118,9 @@ const PLACES = [
     "quarter": "Mitte",
     "note": "OMA : immense atrium diagonal, verre et architecture de bureau spectaculaire.",
     "photoQuery": "Axel Springer Neubau Berlin OMA",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.50862,
+    "lng": 13.39827,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 11,
@@ -127,21 +130,22 @@ const PLACES = [
     "quarter": "Westend",
     "note": "Le Corbusier à Berlin : façade modulaire, couleurs et répétition.",
     "photoQuery": "Corbusierhaus Berlin Unite habitation",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.511008,
+    "lng": 13.242808,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 12,
-    "name": "the temporary bauhaus-archiv / museum für gestaltung",
+    "name": "Temporary Bauhaus-Archiv / Museum für Gestaltung",
     "address": "Knesebeckstraße 1, 10623 Berlin-Bezirk Charlottenburg-Wilmersdorf, Allemagne",
     "category": "Culture & musées",
     "quarter": "Charlottenburg",
     "note": "Adresse temporaire du Bauhaus-Archiv, utile pour suivre ses expositions pendant les travaux.",
-    "photoQuery": "temporary bauhaus archiv Berlin Knesebeckstrasse",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Haus Hardenberg Knesebeckstraße Berlin temporary Bauhaus Archiv",
+    "lat": 52.5109,
+    "lng": 13.3228,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "Haus Hardenberg.jpg"
   },
   {
     "id": 13,
@@ -151,9 +155,9 @@ const PLACES = [
     "quarter": "Tiergarten",
     "note": "Icône Bauhaus reconnaissable à ses sheds et sa silhouette industrielle blanche.",
     "photoQuery": "Bauhaus Archiv Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.50634,
+    "lng": 13.35385,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 14,
@@ -163,9 +167,9 @@ const PLACES = [
     "quarter": "Hansaviertel",
     "note": "Immeuble Interbau de Niemeyer : pilotis, façade rythmée et modernisme des années 1950.",
     "photoQuery": "Oscar Niemeyer Haus Berlin Hansaviertel",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.51769,
+    "lng": 13.3443,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 15,
@@ -175,9 +179,9 @@ const PLACES = [
     "quarter": "Hansaviertel",
     "note": "Musée à ciel ouvert de l’Interbau 1957, avec Aalto, Niemeyer, Gropius et autres modernistes.",
     "photoQuery": "Hansaviertel Berlin Interbau",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.51912,
+    "lng": 13.34187,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 16,
@@ -187,9 +191,9 @@ const PLACES = [
     "quarter": "Westend",
     "note": "Grande structure métallique du Funkturm, intéressante en contre-plongée et à l’heure bleue.",
     "photoQuery": "Funkturm Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.50502,
+    "lng": 13.27814,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 17,
@@ -198,10 +202,11 @@ const PLACES = [
     "category": "Cafés & bars",
     "quarter": "Neukölln",
     "note": "Rooftop alternatif avec vue urbaine, structures bricolées et lumière de fin de journée.",
-    "photoQuery": "Klunkerkranich Berlin rooftop",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Klunkerkranich Berlin Neukölln rooftop",
+    "lat": 52.48207,
+    "lng": 13.43133,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "KlunkerkranichBerlin.jpg"
   },
   {
     "id": 18,
@@ -211,9 +216,9 @@ const PLACES = [
     "quarter": "Alt-Treptow",
     "note": "Piscine flottante sur la Spree, containers, eau et paysage industriel.",
     "photoQuery": "Badeschiff Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.49763,
+    "lng": 13.45366,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 19,
@@ -223,9 +228,9 @@ const PLACES = [
     "quarter": "Tiergarten",
     "note": "Façade ondulée emblématique de la Nouvelle Objectivité.",
     "photoQuery": "Shell Haus Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.506111,
+    "lng": 13.363306,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 20,
@@ -235,9 +240,9 @@ const PLACES = [
     "quarter": "Lichtenberg",
     "note": "Halles vietnamiennes, enseignes, couleurs et atmosphère très différente du centre de Berlin.",
     "photoQuery": "Dong Xuan Center Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.52886,
+    "lng": 13.48947,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 21,
@@ -247,9 +252,9 @@ const PLACES = [
     "quarter": "Kreuzberg",
     "note": "Ancienne église brutaliste transformée en galerie : béton monumental et lumière austère.",
     "photoQuery": "St Agnes Berlin König Galerie",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.50074,
+    "lng": 13.40091,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 22,
@@ -258,10 +263,11 @@ const PLACES = [
     "category": "Culture & musées",
     "quarter": "Tiergarten",
     "note": "Ensemble culturel moderniste : espaces ouverts, musées et grands volumes.",
-    "photoQuery": "Kulturforum Berlin architecture",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Kulturforum Berlin Matthäikirchplatz",
+    "lat": 52.50846,
+    "lng": 13.36774,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "Kulturforum, Berlin.jpg"
   },
   {
     "id": 23,
@@ -271,9 +277,9 @@ const PLACES = [
     "quarter": "Tiergarten",
     "note": "Hans Scharoun : formes organiques, toiture dorée et architecture expressionniste.",
     "photoQuery": "Berliner Philharmonie Scharoun",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.5092,
+    "lng": 13.3697,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 24,
@@ -283,9 +289,9 @@ const PLACES = [
     "quarter": "Tiergarten",
     "note": "Salle de musique aux volumes géométriques, complément naturel de la Philharmonie.",
     "photoQuery": "Kammermusiksaal Berlin architecture",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.509419,
+    "lng": 13.369053,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 25,
@@ -295,9 +301,9 @@ const PLACES = [
     "quarter": "Tiergarten",
     "note": "Le Kunstgewerbemuseum de Rolf Gutbrod : modernisme tardif et intérieurs graphiques.",
     "photoQuery": "Kunstgewerbemuseum Berlin Kulturforum",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.50978,
+    "lng": 13.36733,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 26,
@@ -307,9 +313,9 @@ const PLACES = [
     "quarter": "Potsdamer Platz",
     "note": "Le désormais Center am Potsdamer Platz : spectaculaire toiture tendue, verre et lumière nocturne.",
     "photoQuery": "Sony Center Berlin Potsdamer Platz roof",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.51018,
+    "lng": 13.37352,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 27,
@@ -319,9 +325,9 @@ const PLACES = [
     "quarter": "Tempelhof",
     "note": "Ancien aéroport devenu parc immense : pistes, horizon dégagé et architecture monumentale.",
     "photoQuery": "Tempelhofer Feld Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.473306,
+    "lng": 13.401389,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 28,
@@ -330,10 +336,10 @@ const PLACES = [
     "category": "Architecture & photo",
     "quarter": "Friedrichshain",
     "note": "Ancienne centrale électrique, façade industrielle monumentale et atmosphère brute.",
-    "photoQuery": "Berghain Berlin building",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Berghain Berlin building Am Wriezener Bahnhof",
+    "lat": 52.51117,
+    "lng": 13.44304,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 29,
@@ -342,10 +348,11 @@ const PLACES = [
     "category": "Quartiers & ambiances",
     "quarter": "Friedrichshain",
     "note": "Friches ferroviaires, street art, briques et culture alternative.",
-    "photoQuery": "RAW Gelände Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "RAW Gelände Berlin Revaler Straße",
+    "lat": 52.50708,
+    "lng": 13.45456,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "RAW Berlin Revaler Straße.jpg"
   },
   {
     "id": 30,
@@ -355,9 +362,9 @@ const PLACES = [
     "quarter": "Friedrichshain",
     "note": "Mur, fresques et longues perspectives urbaines au bord de la Spree.",
     "photoQuery": "East Side Gallery Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.5031,
+    "lng": 13.4447,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 31,
@@ -367,9 +374,9 @@ const PLACES = [
     "quarter": "Friedrichshain / Kreuzberg",
     "note": "Pont néogothique iconique, arches, métro et vues sur la Spree.",
     "photoQuery": "Oberbaumbrücke Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.50173,
+    "lng": 13.44566,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 32,
@@ -381,7 +388,7 @@ const PLACES = [
     "photoQuery": "U Bahnhof Paulsternstrasse Berlin",
     "lat": 52.53806,
     "lng": 13.24747,
-    "source": "Google Maps export"
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 33,
@@ -391,21 +398,22 @@ const PLACES = [
     "quarter": "Siemensstadt",
     "note": "Station U7 au graphisme marqué, carreaux et esthétique industrielle.",
     "photoQuery": "U Bahnhof Rohrdamm Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.537222,
+    "lng": 13.2625,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 34,
-    "name": "Galerie James Simon",
+    "name": "James-Simon-Galerie",
     "address": "Bodestraße 1-3, 10178 Berlin, Allemagne",
     "category": "Architecture & photo",
     "quarter": "Mitte",
     "note": "David Chipperfield : colonnade contemporaine et dialogue avec l’Île aux Musées.",
-    "photoQuery": "James Simon Galerie Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "James-Simon-Galerie Berlin Museumsinsel",
+    "lat": 52.51994,
+    "lng": 13.39711,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "James-Simon-Galerie.jpg"
   },
   {
     "id": 35,
@@ -415,9 +423,9 @@ const PLACES = [
     "quarter": "Wilmersdorf",
     "note": "Ensemble urbain et station aux couleurs fortes, typique de Berlin-Ouest.",
     "photoQuery": "U Bahnhof Fehrbelliner Platz Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.490278,
+    "lng": 13.314444,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 36,
@@ -427,9 +435,9 @@ const PLACES = [
     "quarter": "Mitte",
     "note": "Architecture du Bundestag au bord de la Spree, grandes lignes et ouvertures circulaires.",
     "photoQuery": "Marie Elisabeth Lüders Haus Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.520306,
+    "lng": 13.377806,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 37,
@@ -438,10 +446,10 @@ const PLACES = [
     "category": "Culture & musées",
     "quarter": "Mitte",
     "note": "Art contemporain au cœur du quartier parlementaire.",
-    "photoQuery": "Forum Kunst im Bundestag Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Marie Elisabeth Lüders Haus Forum Kunst Bundestag Berlin",
+    "lat": 52.52055,
+    "lng": 13.3774,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 38,
@@ -451,9 +459,9 @@ const PLACES = [
     "quarter": "Tiergarten",
     "note": "La “Schwangere Auster” : toit courbe spectaculaire et bassin réfléchissant.",
     "photoQuery": "Haus der Kulturen der Welt Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.51874,
+    "lng": 13.36485,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 39,
@@ -463,21 +471,22 @@ const PLACES = [
     "quarter": "Mitte",
     "note": "Façades vitrées, cylindres et passerelles dans le complexe parlementaire.",
     "photoQuery": "Paul Löbe Haus Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.520278,
+    "lng": 13.374722,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 40,
-    "name": "3XN Cube Berlin",
+    "name": "Cube Berlin (3XN)",
     "address": "Washingtonpl. 3, 10557 Berlin, Allemagne",
     "category": "Architecture & photo",
     "quarter": "Hauptbahnhof",
     "note": "Cube de verre miroir face à la Hauptbahnhof : reflets et déformations de la ville.",
-    "photoQuery": "Cube Berlin 3XN",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Cube Berlin Washingtonplatz",
+    "lat": 52.52355,
+    "lng": 13.36922,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "Cube Berlin.jpg"
   },
   {
     "id": 41,
@@ -487,9 +496,9 @@ const PLACES = [
     "quarter": "Steglitz",
     "note": "Tour pop-futuriste des années 1970, l’un des objets architecturaux les plus étranges de Berlin.",
     "photoQuery": "Bierpinsel Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.461389,
+    "lng": 13.324444,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 42,
@@ -499,9 +508,9 @@ const PLACES = [
     "quarter": "Charlottenburg",
     "note": "Garage moderniste aux rampes hélicoïdales et façade industrielle.",
     "photoQuery": "Kant Garagen Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.505806,
+    "lng": 13.311889,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 43,
@@ -511,9 +520,9 @@ const PLACES = [
     "quarter": "Charlottenburg",
     "note": "Architecture high-tech surnommée “Armadillo”, charpente métallique spectaculaire.",
     "photoQuery": "Ludwig Erhard Haus Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.506694,
+    "lng": 13.328306,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 44,
@@ -523,9 +532,9 @@ const PLACES = [
     "quarter": "Westend",
     "note": "Vaisseau spatial brutaliste/high-tech, immense et très photogénique depuis l’extérieur.",
     "photoQuery": "ICC Berlin architecture",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.504389,
+    "lng": 13.280611,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 45,
@@ -534,10 +543,10 @@ const PLACES = [
     "category": "Cafés & bars",
     "quarter": "Friedrichshain",
     "note": "Bar berlinois décontracté, ping-pong, lumière tamisée et ambiance locale.",
-    "photoQuery": "Minimal Bar Berlin Rigaer",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Minimal Bar Rigaer Straße 31 Berlin",
+    "lat": 52.5164,
+    "lng": 13.4641,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 46,
@@ -547,9 +556,9 @@ const PLACES = [
     "quarter": "Mitte",
     "note": "Façade métallique, lignes futuristes et skywalk sur le toit.",
     "photoQuery": "Futurium Berlin architecture",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "lat": 52.524022,
+    "lng": 13.374372,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 47,
@@ -558,10 +567,11 @@ const PLACES = [
     "category": "Manger & boire",
     "quarter": "Schöneberg",
     "note": "Adresse populaire pour un döner berlinois, utile comme pause gourmande.",
-    "photoQuery": "Rüyam Gemüse Kebab Hauptstraße Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Rüyam Gemüse Kebap Hauptstraße 36 Berlin",
+    "lat": 52.4868,
+    "lng": 13.3557,
+    "source": "Liste Maps + vérification V2",
+    "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_1_1.webp"
   },
   {
     "id": 48,
@@ -570,10 +580,11 @@ const PLACES = [
     "category": "Manger & boire",
     "quarter": "Prenzlauer Berg",
     "note": "Adresse populaire pour un döner berlinois, utile comme pause gourmande.",
-    "photoQuery": "Rüyam Gemüse Kebab Schönhauser Allee Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Rüyam Gemüse Kebap Schönhauser Allee 44A Berlin",
+    "lat": 52.5405,
+    "lng": 13.41255,
+    "source": "Liste Maps + vérification V2",
+    "photoUrl": "https://rueyam.de/assets/img/Interior/ruyam_2_1.webp"
   },
   {
     "id": 49,
@@ -582,10 +593,10 @@ const PLACES = [
     "category": "Culture & musées",
     "quarter": "Mitte",
     "note": "Cinéma, photographie et archives : nouvelle implantation centrale.",
-    "photoQuery": "Deutsche Kinemathek Berlin Mauerstrasse",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "E-Werk Berlin Mauerstraße 79 Deutsche Kinemathek",
+    "lat": 52.50861,
+    "lng": 13.38713,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 50,
@@ -594,10 +605,10 @@ const PLACES = [
     "category": "Quartiers & ambiances",
     "quarter": "Oberschöneweide",
     "note": "Espace créatif au bord de la Spree dans un environnement industriel.",
-    "photoQuery": "KAOS Berlin Wilhelminenhofstrasse",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Wilhelminenhofstraße 92 Oberschöneweide KAOS Berlin",
+    "lat": 52.462745,
+    "lng": 13.509259,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 51,
@@ -606,10 +617,10 @@ const PLACES = [
     "category": "Manger & boire",
     "quarter": "Kreuzberg",
     "note": "Petite adresse urbaine à garder comme halte dans la zone Kreuzberg.",
-    "photoQuery": "kioski Berlin Köpenicker Strasse",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "kioski Köpenicker Straße 20 Berlin K67 kiosk",
+    "lat": 52.5059534,
+    "lng": 13.4324698,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 52,
@@ -618,22 +629,22 @@ const PLACES = [
     "category": "Auto & insolite",
     "quarter": "Mitte",
     "note": "Petit objet de design urbain/K67 à repérer pour son esthétique rétro-futuriste.",
-    "photoQuery": "K67 Berlin kiosk design",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "K67 Berlin Leipziger Straße 61 kiosk",
+    "lat": 52.5108,
+    "lng": 13.3999,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 53,
-    "name": "Das Kleine Grosz Museum",
+    "name": "Das kleine Grosz Museum",
     "address": "Bülowstraße 18, 10783 Berlin, Allemagne",
     "category": "Culture & musées",
     "quarter": "Schöneberg",
     "note": "Petit musée dédié à George Grosz dans une ancienne station-service reconvertie.",
-    "photoQuery": "Das Kleine Grosz Museum Berlin",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Das kleine Grosz Museum Bülowstraße 18 Berlin",
+    "lat": 52.49786,
+    "lng": 13.35973,
+    "source": "Liste Maps + vérification V2"
   },
   {
     "id": 54,
@@ -642,10 +653,11 @@ const PLACES = [
     "category": "Architecture & photo",
     "quarter": "Mitte",
     "note": "Peter Behrens à Alexanderplatz : Nouvelle Objectivité, trame répétitive et histoire berlinoise.",
-    "photoQuery": "Berolinahaus Berlin Alexanderplatz",
-    "lat": null,
-    "lng": null,
-    "source": "Google Maps export"
+    "photoQuery": "Berolinahaus Alexanderplatz Berlin",
+    "lat": 52.5215,
+    "lng": 13.4125,
+    "source": "Liste Maps + vérification V2",
+    "photoFile": "Berlin - Berolinahaus.jpg"
   },
   {
     "id": 55,
@@ -657,6 +669,250 @@ const PLACES = [
     "photoQuery": "St Martin Kirche Berlin Kaulsdorf",
     "lat": 52.5149,
     "lng": 13.60363,
-    "source": "Google Maps export"
+    "source": "Liste Maps + vérification V2"
+  },
+  {
+    "id": 56,
+    "name": "Heidelberger Platz",
+    "address": "Heidelberger Platz, 10713 Berlin, Allemagne",
+    "category": "Métro & transport",
+    "quarter": "Wilmersdorf",
+    "note": "Station U-Bahn historique aux voûtes très graphiques, intéressante pour les perspectives et répétitions.",
+    "photoQuery": "U-Bahnhof Heidelberger Platz Berlin",
+    "lat": 52.479808,
+    "lng": 13.313236,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 57,
+    "name": "Wittenbergplatz",
+    "address": "Wittenbergplatz 1, 10789 Berlin, Allemagne",
+    "category": "Métro & transport",
+    "quarter": "Schöneberg",
+    "note": "Station historique d’Alfred Grenander : hall, typographie et détails du métro berlinois.",
+    "photoQuery": "U-Bahnhof Wittenbergplatz Berlin",
+    "lat": 52.501889,
+    "lng": 13.342806,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 58,
+    "name": "Teufelsberg",
+    "address": "Teufelsseechaussee 10, 14193 Berlin, Allemagne",
+    "category": "Auto & insolite",
+    "quarter": "Grunewald",
+    "note": "Ancienne station d’écoute : radômes, béton, street art et vues sur Berlin.",
+    "photoQuery": "Teufelsberg Berlin listening station radomes",
+    "lat": 52.497368,
+    "lng": 13.240597,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 59,
+    "name": "Akademie der Künste – Hanseatenweg",
+    "address": "Hanseatenweg 10, 10557 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Hansaviertel",
+    "note": "Architecture moderniste de l’Interbau, patios, transparences et volumes bas.",
+    "photoQuery": "Akademie der Künste Hanseatenweg Berlin",
+    "lat": 52.517889,
+    "lng": 13.346111,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 60,
+    "name": "Ernst-Reuter-Platz",
+    "address": "Ernst-Reuter-Platz, 10587 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Charlottenburg",
+    "note": "Grand ensemble moderniste circulaire, circulation, façades et perspectives urbaines.",
+    "photoQuery": "Ernst Reuter Platz Berlin architecture",
+    "lat": 52.512639,
+    "lng": 13.321889,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 61,
+    "name": "Bikini Berlin",
+    "address": "Budapester Str. 38-50, 10787 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Charlottenburg",
+    "note": "Modernisme réhabilité, grandes baies et vues vers le zoo et Breitscheidplatz.",
+    "photoQuery": "Bikini Berlin building",
+    "lat": 52.505389,
+    "lng": 13.336194,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 62,
+    "name": "Upper West",
+    "address": "Kantstraße 163-165, 10623 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Charlottenburg",
+    "note": "Tour contemporaine très graphique, lignes verticales et contraste avec l’église du Souvenir.",
+    "photoQuery": "Upper West Berlin tower",
+    "lat": 52.5059,
+    "lng": 13.3327,
+    "source": "Ajout V2",
+    "photoFile": "Berlin - Upper West.jpg"
+  },
+  {
+    "id": 63,
+    "name": "silent green Kulturquartier",
+    "address": "Gerichtstraße 35, 13347 Berlin, Allemagne",
+    "category": "Culture & musées",
+    "quarter": "Wedding",
+    "note": "Ancien crématorium reconverti en lieu culturel : symétrie, coupole et atmosphère singulière.",
+    "photoQuery": "silent green Kulturquartier Berlin",
+    "lat": 52.54569,
+    "lng": 13.36628,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 64,
+    "name": "DARK MATTER",
+    "address": "Köpenicker Chaussee 46, 10317 Berlin, Allemagne",
+    "category": "Culture & musées",
+    "quarter": "Lichtenberg",
+    "note": "Installations de lumière immersives : intéressant pour une parenthèse visuelle très graphique.",
+    "photoQuery": "DARK MATTER Berlin Köpenicker Chaussee",
+    "lat": 52.4943,
+    "lng": 13.4947,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 65,
+    "name": "Deutsches Historisches Museum – Pei-Bau",
+    "address": "Hinter dem Gießhaus 3, 10117 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Mitte",
+    "note": "Extension d’I. M. Pei : verre, pierre et escalier hélicoïdal très photogénique.",
+    "photoQuery": "Pei Bau Deutsches Historisches Museum Berlin",
+    "lat": 52.5177,
+    "lng": 13.3967,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 66,
+    "name": "Motorwerk Berlin",
+    "address": "An der Industriebahn 12, 13088 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Weißensee",
+    "note": "Grande halle industrielle en brique, charpente et proportions monumentales.",
+    "photoQuery": "Motorwerk Berlin Weißensee",
+    "lat": 52.563592,
+    "lng": 13.461189,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 67,
+    "name": "Napoleon Komplex",
+    "address": "Modersohnstraße 35-45, 10245 Berlin, Allemagne",
+    "category": "Quartiers & ambiances",
+    "quarter": "Friedrichshain",
+    "note": "Ancien complexe industriel devenu lieu culturel, entre briques, cour et ambiance alternative.",
+    "photoQuery": "Napoleon Komplex Berlin",
+    "lat": 52.50358,
+    "lng": 13.45853,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 68,
+    "name": "Kühlhaus Berlin",
+    "address": "Luckenwalder Str. 3, 10963 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Kreuzberg",
+    "note": "Ancien entrepôt frigorifique monumental près de Gleisdreieck, volumes industriels très forts.",
+    "photoQuery": "Kühlhaus Berlin Luckenwalder Straße",
+    "lat": 52.49965,
+    "lng": 13.37648,
+    "source": "Ajout V2",
+    "photoFile": "Kühlhaus am Gleisdreieck, Luckenwalder Straße 3, Berlin-Kreuzberg-40660.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Malzfabrik",
+    "address": "Bessemerstraße 2-14, 12103 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Tempelhof",
+    "note": "Patrimoine industriel de brique, cheminées, cours et reconversion créative.",
+    "photoQuery": "Malzfabrik Berlin",
+    "lat": 52.46659,
+    "lng": 13.36532,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 70,
+    "name": "Kraftwerk Berlin",
+    "address": "Köpenicker Str. 70, 10179 Berlin, Allemagne",
+    "category": "Architecture & photo",
+    "quarter": "Mitte",
+    "note": "Ancienne centrale électrique : béton brut, échelle monumentale et esthétique industrielle.",
+    "photoQuery": "Kraftwerk Berlin Köpenicker Straße",
+    "lat": 52.510806,
+    "lng": 13.419806,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 71,
+    "name": "Urban Nation",
+    "address": "Bülowstraße 7, 10783 Berlin, Allemagne",
+    "category": "Culture & musées",
+    "quarter": "Schöneberg",
+    "note": "Musée et façade dédiés à l’art urbain, très changeants et colorés.",
+    "photoQuery": "Urban Nation Berlin Bülowstraße",
+    "lat": 52.49867,
+    "lng": 13.35665,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 72,
+    "name": "Mediaspree",
+    "address": "Mühlenstraße / Warschauer Straße, 10243 Berlin, Allemagne",
+    "category": "Quartiers & ambiances",
+    "quarter": "Friedrichshain / Kreuzberg",
+    "note": "Secteur de la Spree mêlant nouveaux bureaux, patrimoine industriel, ponts et grands axes.",
+    "photoQuery": "Mediaspree Berlin architecture",
+    "lat": 52.5047,
+    "lng": 13.4478,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 73,
+    "name": "Europacity",
+    "address": "Heidestraße / Invalidenstraße, 10557 Berlin, Allemagne",
+    "category": "Quartiers & ambiances",
+    "quarter": "Moabit / Hauptbahnhof",
+    "note": "Quartier contemporain au nord de Hauptbahnhof : façades neuves, lignes et grands espaces.",
+    "photoQuery": "Europacity Berlin Heidestraße architecture",
+    "lat": 52.5289,
+    "lng": 13.36919,
+    "source": "Ajout V2"
+  },
+  {
+    "id": 74,
+    "name": "ibis Styles Berlin Mitte",
+    "address": "Brunnenstraße 1-2, 10119 Berlin, Allemagne",
+    "category": "Repères du séjour",
+    "quarter": "Mitte",
+    "note": "Ton logement à Berlin : repère pratique pour situer les spots et les trajets.",
+    "photoQuery": "ibis Styles Berlin Mitte Brunnenstraße",
+    "lat": 52.530071,
+    "lng": 13.401002,
+    "source": "Ajout V2",
+    "kind": "hotel"
+  },
+  {
+    "id": 75,
+    "name": "Messe Berlin",
+    "address": "Messedamm 22, 14055 Berlin, Allemagne",
+    "category": "Repères du séjour",
+    "quarter": "Westend",
+    "note": "Ton lieu de travail à Berlin : point de référence pour organiser les sorties avant et après la journée.",
+    "photoQuery": "Messe Berlin entrance Messedamm",
+    "lat": 52.500152,
+    "lng": 13.27079,
+    "source": "Ajout V2",
+    "kind": "work"
   }
 ];

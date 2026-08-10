@@ -1,9 +1,20 @@
 {
-  "name": "Carnet Photo — Berlin",
+  "name": "Carnet Photo Berlin — BÊTA 2",
   "short_name": "Berlin Photo",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f3efe7",
-  "theme_color": "#f3efe7",
-  "icons": []
+  "background_color": "#f3f1ec",
+  "theme_color": "#151515",
+  "icons": [
+    {
+      "src": "icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

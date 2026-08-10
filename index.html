@@ -1,69 +1,30 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f3efe7">
-  <title>Carnet Photo — Berlin</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#151515">
+  <title>Carnet photo · Berlin — BÊTA 2</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preconnect" href="https://unpkg.com">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://tile.openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3yn5reAI3EWCdJ4ZbShF0pZdhPMw=" crossorigin="">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div>
-      <div class="eyebrow">CARNET PHOTO</div>
-      <h1>Berlin</h1>
-      <p id="countLabel">55 lieux enregistrés</p>
-    </div>
-    <button class="icon-btn" id="installBtn" hidden aria-label="Installer l'application">＋</button>
-  </header>
-
-  <main>
-    <div class="search-wrap"><input id="search" type="search" placeholder="Rechercher un lieu, un quartier…" autocomplete="off"></div>
-    <nav class="tabs" aria-label="Navigation principale">
-      <button class="tab active" data-tab="map">Carte</button>
-      <button class="tab" data-tab="categories">Catégories</button>
-      <button class="tab" data-tab="quarters">Quartiers</button>
-    </nav>
-
-    <section id="mapView" class="view active">
-      <div id="map"></div>
-      <div class="map-status" id="mapStatus">Carte : préparation des positions…</div>
-    </section>
-
-    <section id="categoriesView" class="view">
-      <div id="categoryChips" class="chips"></div>
-      <div id="categoryGrid" class="cards"></div>
-    </section>
-
-    <section id="quartersView" class="view">
-      <div id="quarterChips" class="chips"></div>
-      <div id="quarterGrid" class="cards"></div>
-    </section>
-  </main>
-
-  <dialog id="placeDialog">
-    <button class="close" id="closeDialog" aria-label="Fermer">×</button>
-    <div class="dialog-photo-wrap">
-      <img id="dialogPhoto" class="dialog-photo" alt="">
-      <button id="nextPhoto" class="next-photo" title="Essayer une autre photo">↻ autre photo</button>
-    </div>
-    <div class="dialog-body">
-      <div class="dialog-kicker" id="dialogCategory"></div>
-      <h2 id="dialogName"></h2>
-      <p class="dialog-note" id="dialogNote"></p>
-      <p class="dialog-address" id="dialogAddress"></p>
-      <div class="dialog-actions">
-        <a id="googleLink" target="_blank" rel="noopener">Google Maps</a>
-        <a id="appleLink" target="_blank" rel="noopener">Plans</a>
-      </div>
-    </div>
-  </dialog>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+<header class="topbar">
+  <div><div class="eyebrow">CARNET PHOTO <span class="beta">BÊTA 2</span></div><h1>Berlin</h1><div id="countLabel" class="count"></div></div>
+  <button id="installBtn" class="install" hidden>Installer</button>
+</header>
+<div class="search-wrap"><input id="search" type="search" placeholder="Rechercher un lieu, quartier, catégorie…" autocomplete="off"><button id="clearFilters" class="ghost">Réinitialiser</button></div>
+<div id="activeFilters" class="active-filters" hidden></div>
+<nav class="tabs" aria-label="Navigation">
+  <button class="tab active" data-tab="map">Carte</button><button class="tab" data-tab="categories">Catégories</button><button class="tab" data-tab="quarters">Quartiers</button>
+</nav>
+<main>
+<section id="mapView" class="view active"><div class="map-tools"><button id="fitBtn">Voir tous</button><button id="locateBtn">Me localiser</button></div><div id="map"></div><div id="mapStatus" class="status"></div></section>
+<section id="categoriesView" class="view"><div class="section-intro"><h2>Explorer par catégorie</h2><p>Les lieux sont réellement regroupés par type. Touchez « Voir sur la carte » pour n’afficher que ce groupe.</p></div><div id="categoryGroups"></div></section>
+<section id="quartersView" class="view"><div class="section-intro"><h2>Explorer par quartier</h2><p>Les lieux sont regroupés géographiquement, indépendamment de leur catégorie.</p></div><div id="quarterGroups"></div></section>
+</main>
+<dialog id="placeDialog"><button id="closeDialog" class="close" aria-label="Fermer">×</button><div class="dialog-photo-wrap"><img id="dialogPhoto" alt=""><div id="photoState" class="photo-state">Chargement de la photo…</div></div><div class="dialog-body"><div id="dialogCategory" class="card-category"></div><h2 id="dialogName"></h2><p id="dialogNote"></p><p id="dialogAddress" class="address"></p><div class="actions"><a id="googleLink" target="_blank" rel="noopener">Itinéraire Google Maps</a><a id="appleLink" target="_blank" rel="noopener">Itinéraire Plans</a></div><button id="nextPhoto" class="secondary">Autre photo</button><div class="photo-credit">Photos : Wikimedia Commons quand disponibles. Une image manquante est signalée au lieu d’afficher un lieu sans rapport.</div></div></dialog>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="data.js"></script><script src="app.js"></script>
+</body></html>
