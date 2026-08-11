@@ -131,7 +131,7 @@ const PLACES = [
     "lng": 13.39111,
     "source": "Liste Maps + vérification V2",
     "photoMode": "fixed",
-    "photoUrl": "https://bauten.hu-berlin.de/de/grimm/bilder/fotos-architektur/leseterrassen-im-jacob-und-wilhelm-grimm-zentrum-der-hu-berlin-architektur/%40%40images/image-768-5e150cdd74a296de4dc324aca0ce2f42.jpeg",
+    "photoUrl": "https://www.berlin.de/binaries/asset/image_assets/2956602/source/1694088913/1000x500/",
     "photoLocked": true
   },
   {
@@ -581,7 +581,7 @@ const PLACES = [
     "lng": 13.374722,
     "source": "Liste Maps + vérification V2",
     "photoMode": "fixed",
-    "photoUrl": "https://files.structurae.net/files/photos/1/paul-lobe-haus_westseite_frontalansicht_berlin-mitte_151223_ako.jpg",
+    "photoUrl": "https://www.bundestag.de/resource/image/939090/16x9/2340/1318/7ebf712e387478dae67af1aca06e9ea9/C8062506D327FB9983468141D84D05CF/paul-loebe-haus-1.jpg",
     "photoLocked": true
   },
   {
@@ -611,7 +611,7 @@ const PLACES = [
     "lng": 13.324444,
     "source": "Liste Maps + vérification V2",
     "photoMode": "fixed",
-    "photoUrl": "https://files.structurae.net/files/photos/2055/p4120120.jpg",
+    "photoUrl": "https://cdn.thespaces.com/wp-content/uploads/2017/10/Bierpinsel-tower-berlin-brutalism-1.jpg",
     "photoLocked": true
   },
   {
@@ -671,7 +671,7 @@ const PLACES = [
     "lng": 13.4641,
     "source": "Liste Maps + vérification V2",
     "photoMode": "fixed",
-    "photoUrl": "https://image.bz-berlin.de/data/uploads/2025/05/minimal_bar_16i9-1.jpg?impolicy=article&imwidth=992",
+    "photoUrl": "https://cdn.eventinc.de/provider_pictures/pictures/000/004/123/cropped_webp/Eventlocation_Minimal_Bar_Berlin_Lounge_Tischtennis.webp",
     "photoLocked": true
   },
   {
@@ -731,7 +731,7 @@ const PLACES = [
     "lng": 13.38713,
     "source": "Liste Maps + vérification V2",
     "photoMode": "fixed",
-    "photoUrl": "https://cms.museumsdienst.berlin/imager/mediafiles/gomus/museums/383168/11-02_E-Werk_Mauerstrasse_Copyright_Andreas_Nenninger__Photography_e7c665d712ec67dfe3f3524f4c64cbe9.jpg",
+    "photoUrl": "https://www.berlin.de/binaries/asset/image_assets/9284154/ratio_2_1/1737445560/1000x500/",
     "photoLocked": true
   },
   {
@@ -746,7 +746,7 @@ const PLACES = [
     "lng": 13.509259,
     "source": "Liste Maps + vérification V2",
     "photoMode": "fixed",
-    "photoUrl": "https://kaosberlin.de/wp-content/uploads/slider/cache/5125dcabbc39dcafa65310bef15bbcc7/Copyright_by_David_Dollmann_Copyright_by_David_Dollmann_2017.12.06-Kaos-Hallenbilder-Mehrfachbelichtung2519.jpg",
+    "photoUrl": "https://kaosberlin.de/wp-content/uploads/2021/05/Copyright_by_David_Dollmann_DSC_1298_Kaos.jpg",
     "photoLocked": true
   },
   {
@@ -866,7 +866,7 @@ const PLACES = [
     "lng": 13.240597,
     "source": "Ajout V2",
     "photoMode": "fixed",
-    "photoUrl": "https://mapurbex-storage.fly.storage.tigris.dev/Berlin-01K9PG101YN7JN59A3FHM94GH1.jpg",
+    "photoUrl": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/freiflaechen/berge/img-1269.jpg",
     "photoLocked": true
   },
   {
@@ -881,7 +881,7 @@ const PLACES = [
     "lng": 13.346111,
     "source": "Ajout V2",
     "photoMode": "fixed",
-    "photoUrl": "https://www.bruecke-museum.de/images/DS_1a.jpg?w=2000",
+    "photoUrl": "https://12.berlinbiennale.de/de/wp-content/uploads/sites/2/2022/06/BB12_AdK-Hanseatenweg-2400x1601.jpg",
     "photoLocked": true
   },
   {
@@ -972,7 +972,7 @@ const PLACES = [
     "lng": 13.3967,
     "source": "Ajout V2",
     "photoMode": "fixed",
-    "photoUrl": "https://www.dhm.de/blog/wp-content/uploads/2023/07/09_DHM_Ausstellungshalle-c-Ulrich-Schwarz.jpg",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Deutsches_Historisches_Museum%2C_Berlin-Mitte%2C_170128%2C_ako.jpg",
     "photoLocked": true
   },
   {

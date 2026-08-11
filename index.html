@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#151515">
-  <title>Carnet photo · Berlin — V4</title>
+  <title>Carnet photo · Berlin — V5</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icon-180.png">
   <link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://tile.openstreetmap.org">
@@ -11,18 +11,43 @@
   <link rel="stylesheet" href="leaflet-fallback.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-mode">
 <header class="topbar">
-  <div><div class="eyebrow">CARNET PHOTO <span class="beta">V4</span></div><h1>Berlin</h1><div id="countLabel" class="count"></div></div>
+  <div><div class="eyebrow">CARNET PHOTO <span class="beta">V5</span></div><h1>Berlin</h1><div id="countLabel" class="count"></div></div>
   <button id="installBtn" class="install" hidden>Installer</button>
 </header>
 <div class="search-wrap"><input id="search" type="search" placeholder="Rechercher un lieu, quartier, catégorie…" autocomplete="off"><button id="clearFilters" class="ghost">Réinitialiser</button></div>
 <div id="activeFilters" class="active-filters" hidden></div>
 <nav class="tabs" aria-label="Navigation">
-  <button class="tab active" data-tab="map">Carte</button><button class="tab" data-tab="categories">Catégories</button><button class="tab" data-tab="quarters">Quartiers</button>
+  <button class="tab" data-tab="home">Accueil</button><button class="tab" data-tab="map">Carte</button><button class="tab" data-tab="categories">Catégories</button><button class="tab" data-tab="quarters">Quartiers</button>
 </nav>
 <main>
-<section id="mapView" class="view active"><div id="mapCategoryFilters" class="filter-chips"></div><div class="map-tools"><button id="fitBtn">Voir tous</button><button id="locateBtn">Me localiser</button></div><div id="map"></div><div id="mapStatus" class="status"></div></section>
+<section id="homeView" class="view active">
+  <div class="home-hero">
+    <svg class="hero-city" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Berlin au crépuscule avec la tour de télévision">
+      <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#708285"/><stop offset=".5" stop-color="#c99472"/><stop offset="1" stop-color="#3f302b"/></linearGradient><filter id="grain"><feTurbulence baseFrequency=".72" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer></filter></defs>
+      <rect width="1200" height="620" fill="url(#sky)"/><circle cx="920" cy="105" r="54" fill="#f1d0a6" opacity=".72"/>
+      <g fill="#292828"><rect x="0" y="380" width="205" height="240"/><rect x="180" y="315" width="155" height="305"/><rect x="320" y="410" width="225" height="210"/><rect x="530" y="335" width="235" height="285"/><rect x="745" y="405" width="200" height="215"/><rect x="925" y="305" width="275" height="315"/></g>
+      <g fill="#d49a62" opacity=".75"><rect x="215" y="355" width="22" height="35"/><rect x="268" y="355" width="22" height="35"/><rect x="575" y="380" width="32" height="46"/><rect x="650" y="380" width="32" height="46"/><rect x="990" y="350" width="27" height="41"/><rect x="1060" y="350" width="27" height="41"/></g>
+      <path d="M690 620V300h11v320zm5-325l-78 175h156z" fill="#191a1a"/><circle cx="695" cy="273" r="31" fill="#242525"/><path d="M695 245V75" stroke="#242525" stroke-width="10"/><path d="M695 78l-12-22h24z" fill="#242525"/><rect width="1200" height="620" filter="url(#grain)" opacity=".5"/>
+    </svg>
+    <div class="hero-shade"></div>
+    <div class="hero-top"><span>CARNET PHOTO</span><b>V5</b></div>
+    <div class="hero-copy"><div class="hero-kicker">Architecture · culture · adresses</div><h1>Berlin</h1><p>75 lieux · 30 quartiers · votre carnet personnel</p><button class="hero-button" data-home-tab="map">Explorer Berlin <span>→</span></button></div>
+  </div>
+  <div class="home-content">
+    <div class="home-landmarks">
+      <button data-place-id="74"><span class="landmark-icon">🛏️</span><span><strong>ibis Styles Mitte</strong><small>Votre hôtel · Mitte</small></span></button>
+      <button data-place-id="75"><span class="landmark-icon">💼</span><span><strong>Messe Berlin</strong><small>Votre travail · Westend</small></span></button>
+    </div>
+    <div class="home-shortcuts">
+      <button data-home-tab="map"><span>⌖</span>Carte</button><button data-home-tab="categories"><span>◫</span>Catégories</button><button data-home-tab="quarters"><span>◎</span>Quartiers</button>
+    </div>
+    <div class="featured-head"><h2>À découvrir</h2><button data-home-tab="categories">Voir les 75 lieux →</button></div>
+    <div id="featuredPlaces" class="featured-grid"></div>
+  </div>
+</section>
+<section id="mapView" class="view"><div id="mapCategoryFilters" class="filter-chips"></div><div class="map-tools"><button id="fitBtn">Voir tous</button><button id="locateBtn">Me localiser</button></div><div id="map"></div><div id="mapStatus" class="status"></div></section>
 <section id="categoriesView" class="view"><div class="section-intro"><h2>Explorer par catégorie</h2><p>Les lieux sont réellement regroupés par type. Touchez « Voir sur la carte » pour n’afficher que ce groupe.</p></div><div id="categoryGroups"></div></section>
 <section id="quartersView" class="view"><div class="section-intro"><h2>Explorer par quartier</h2><p>Les lieux sont regroupés géographiquement, indépendamment de leur catégorie.</p></div><div id="quarterGroups"></div></section>
 </main>
