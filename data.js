@@ -1127,5 +1127,20 @@ const PLACES = [
     "photoMode": "fixed",
     "photoUrl": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/spazieren-und-wandern/kiezspaziergaenge/palais_messe_berlin_2023.jpg",
     "photoLocked": true
+  },
+  {
+    "id": 76,
+    "name": "Jewish Museum Berlin",
+    "address": "Lindenstraße 9–14, 10969 Berlin, Allemagne",
+    "category": "Culture & musées",
+    "quarter": "Kreuzberg",
+    "note": "Musée juif de Berlin et bâtiment déconstructiviste de Daniel Libeskind : façade de zinc, lignes brisées, vides et parcours intérieur architectural. L’exposition permanente et les espaces du bâtiment Libeskind sont accessibles gratuitement.",
+    "photoQuery": "Jewish Museum Berlin Libeskind Building",
+    "lat": 52.50208,
+    "lng": 13.39548,
+    "source": "Ajout V6",
+    "photoMode": "fixed",
+    "photoUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Berlin%20J%C3%BCdisches%20Museum%20und%20der%20Libeskind-Bau.jpg?width=1200",
+    "photoLocked": true
   }
 ];

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#151515">
-  <title>Carnet photo · Berlin — V5</title>
+  <title>Carnet photo · Berlin — V6</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icon-180.png">
   <link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://tile.openstreetmap.org">
@@ -13,13 +13,13 @@
 </head>
 <body class="home-mode">
 <header class="topbar">
-  <div><div class="eyebrow">CARNET PHOTO <span class="beta">V5</span></div><h1>Berlin</h1><div id="countLabel" class="count"></div></div>
+  <div><div class="eyebrow">CARNET PHOTO <span class="beta">V6</span></div><h1>Berlin</h1><div id="countLabel" class="count"></div></div>
   <button id="installBtn" class="install" hidden>Installer</button>
 </header>
 <div class="search-wrap"><input id="search" type="search" placeholder="Rechercher un lieu, quartier, catégorie…" autocomplete="off"><button id="clearFilters" class="ghost">Réinitialiser</button></div>
 <div id="activeFilters" class="active-filters" hidden></div>
 <nav class="tabs" aria-label="Navigation">
-  <button class="tab" data-tab="home">Accueil</button><button class="tab" data-tab="map">Carte</button><button class="tab" data-tab="categories">Catégories</button><button class="tab" data-tab="quarters">Quartiers</button>
+  <button class="tab" data-tab="home">Accueil</button><button class="tab" data-tab="planning">Planning</button><button class="tab" data-tab="map">Carte</button><button class="tab" data-tab="categories">Catégories</button><button class="tab" data-tab="quarters">Quartiers</button>
 </nav>
 <main>
 <section id="homeView" class="view active">
@@ -32,8 +32,8 @@
       <path d="M690 620V300h11v320zm5-325l-78 175h156z" fill="#191a1a"/><circle cx="695" cy="273" r="31" fill="#242525"/><path d="M695 245V75" stroke="#242525" stroke-width="10"/><path d="M695 78l-12-22h24z" fill="#242525"/><rect width="1200" height="620" filter="url(#grain)" opacity=".5"/>
     </svg>
     <div class="hero-shade"></div>
-    <div class="hero-top"><span>CARNET PHOTO</span><b>V5</b></div>
-    <div class="hero-copy"><div class="hero-kicker">Architecture · culture · adresses</div><h1>Berlin</h1><p>75 lieux · 30 quartiers · votre carnet personnel</p><button class="hero-button" data-home-tab="map">Explorer Berlin <span>→</span></button></div>
+    <div class="hero-top"><span>CARNET PHOTO</span><b>V6</b></div>
+    <div class="hero-copy"><div class="hero-kicker">Architecture · culture · adresses</div><h1>Berlin</h1><p>76 lieux · 30 quartiers · votre carnet personnel</p><button class="hero-button" data-home-tab="map">Explorer Berlin <span>→</span></button></div>
   </div>
   <div class="home-content">
     <div class="home-landmarks">
@@ -41,16 +41,73 @@
       <button data-place-id="75"><span class="landmark-icon">💼</span><span><strong>Messe Berlin</strong><small>Votre travail · Westend</small></span></button>
     </div>
     <div class="home-shortcuts">
-      <button data-home-tab="map"><span>⌖</span>Carte</button><button data-home-tab="categories"><span>◫</span>Catégories</button><button data-home-tab="quarters"><span>◎</span>Quartiers</button>
+      <button data-home-tab="planning"><span>▤</span>Planning</button><button data-home-tab="map"><span>⌖</span>Carte</button><button data-home-tab="categories"><span>◫</span>Catégories</button><button data-home-tab="quarters"><span>◎</span>Quartiers</button>
     </div>
-    <div class="featured-head"><h2>À découvrir</h2><button data-home-tab="categories">Voir les 75 lieux →</button></div>
+    <div class="featured-head"><h2>À découvrir</h2><button data-home-tab="categories">Voir les 76 lieux →</button></div>
     <div id="featuredPlaces" class="featured-grid"></div>
+  </div>
+</section>
+<section id="planningView" class="view planning-view">
+  <div class="planning-hero"><div><span>20 → 25 SEPTEMBRE 2026</span><h2>Berlin pendant InnoTrans</h2><p>Architecture prioritaire, trajets réalistes et temps de travail préservé.</p></div><b>6 jours</b></div>
+  <div class="planning-note"><span>🚆</span><p>Programme conçu avec les transports publics et la marche. Les horaires de transport seront à vérifier dans BVG le jour même. Les visites facultatives peuvent être supprimées selon la fatigue ou les besoins du stand.</p></div>
+  <div class="day-list">
+    <article class="day-card"><header><div class="date-box"><b>20</b><span>DIM.</span></div><div><small>JOUR 1 · ARRIVÉE</small><h3>Installation à Mitte</h3><p>Une soirée volontairement légère après le voyage.</p></div></header><div class="timeline">
+      <div><time>19 h</time><section><h4>Arrivée à Berlin</h4><p>Installation à l’ibis Styles Berlin Mitte.</p><button data-plan-id="74">Voir l’hôtel</button></section></div>
+      <div><time>Soir</time><section><h4>Rosenthaler Platz</h4><p>Dîner près de l’hôtel et courte promenade uniquement si vous avez encore de l’énergie.</p></section></div>
+    </div></article>
+
+    <article class="day-card featured-day"><header><div class="date-box"><b>21</b><span>LUN.</span></div><div><small>JOUR 2 · ARCHITECTURE & MONTAGE</small><h3>Mitte, Ludwig Erhard Haus & Messe</h3><p>La grande matinée d’architecture, puis supervision du montage.</p></div></header><div class="timeline">
+      <div class="transport-step"><time>7 h 15</time><section><h4>Hôtel → Museumsinsel</h4><p>Tram depuis Rosenthaler Platz, puis courte marche vers la James-Simon-Galerie.</p></section></div>
+      <div><time>7 h 40</time><section><h4>James-Simon-Galerie — extérieur</h4><p>Colonnade, escaliers et façades. Le bâtiment est fermé le lundi.</p><button data-plan-id="34">Voir la fiche</button></section></div>
+      <div class="transport-step"><time>8 h 05</time><section><h4>Museumsinsel → Hauptbahnhof</h4><p>S-Bahn vers Hauptbahnhof, puis parcours à pied.</p></section></div>
+      <div><time>8 h 20</time><section><h4>Futurium, Cube Berlin & Europacity</h4><p>Reflets, volumes contemporains et nouvelles perspectives autour de la gare.</p><button data-plan-id="46">Voir Futurium</button><button data-plan-id="40">Voir Cube Berlin</button></section></div>
+      <div><time>9 h</time><section><h4>Quartier gouvernemental</h4><p>Chancellerie, Paul-Löbe-Haus, Marie-Elisabeth-Lüders-Haus et Jakob-Kaiser-Haus.</p><button data-plan-id="7">Voir la Chancellerie</button></section></div>
+      <div class="transport-step"><time>9 h 35</time><section><h4>Hauptbahnhof → Zoologischer Garten</h4><p>S-Bahn vers Zoologischer Garten, puis marche jusqu’au Ludwig Erhard Haus.</p></section></div>
+      <div><time>10 h 15</time><section><h4>Ludwig Erhard Haus</h4><p>1 h 30 prévue pour l’extérieur et une demande d’accès libre au Kant-Atrium. L’accès intérieur et les photographies restent soumis à l’accord de l’accueil.</p><button data-plan-id="43">Voir la fiche</button></section></div>
+      <div class="transport-step"><time>11 h 45</time><section><h4>Ludwig Erhard Haus → Messe Berlin</h4><p>S-Bahn depuis Zoologischer Garten vers Messe Nord/ICC, puis marche vers le parc des expositions.</p></section></div>
+      <div><time>12 h 15</time><section><h4>Montage du stand</h4><p>Supervision du montage à Messe Berlin.</p><button data-plan-id="75">Voir Messe Berlin</button></section></div>
+      <div><time>Option</time><section><h4>ICC & Tour radio</h4><p>Photographies extérieures uniquement si le montage se termine assez tôt.</p><button data-plan-id="44">Voir l’ICC</button><button data-plan-id="16">Voir la Tour radio</button></section></div>
+    </div></article>
+
+    <article class="day-card"><header><div class="date-box"><b>22</b><span>MAR.</span></div><div><small>JOUR 3 · INNOTRANS & AUTOMOBILE</small><h3>Messe Berlin & Classic-Remise</h3><p>Première journée de salon, puis voitures de collection pendant l’ouverture.</p></div></header><div class="timeline">
+      <div class="transport-step"><time>8 h</time><section><h4>Hôtel → Messe Berlin</h4><p>Tram ou marche vers Alexanderplatz/Hackescher Markt, puis S-Bahn jusqu’à Messe Nord/ICC.</p></section></div>
+      <div><time>9–18 h</time><section><h4>InnoTrans</h4><p>Journée complète sur le salon.</p><button data-plan-id="75">Voir Messe Berlin</button></section></div>
+      <div class="transport-step"><time>18 h</time><section><h4>Messe Berlin → Classic-Remise</h4><p>S-Bahn circulaire vers Beusselstraße, puis bus ou marche jusqu’à Wiebestraße.</p></section></div>
+      <div><time>18 h 40</time><section><h4>Classic-Remise Berlin</h4><p>Ancien dépôt de tramways, voitures historiques et ateliers. Ouvert jusqu’à 20 h.</p><button data-plan-id="1">Voir la fiche</button></section></div>
+      <div class="transport-step"><time>20 h</time><section><h4>Retour à Mitte</h4><p>Bus puis S-Bahn ou U-Bahn vers Rosenthaler Platz.</p></section></div>
+    </div></article>
+
+    <article class="day-card"><header><div class="date-box"><b>23</b><span>MER.</span></div><div><small>JOUR 4 · OMA & POTSDAMER PLATZ</small><h3>Axel Springer & Sony Center</h3><p>Deux architectures contemporaines, avant et après InnoTrans.</p></div></header><div class="timeline">
+      <div class="transport-step"><time>7 h 10</time><section><h4>Hôtel → Axel Springer</h4><p>U8 depuis Rosenthaler Platz vers Moritzplatz, puis marche.</p></section></div>
+      <div><time>7 h 35</time><section><h4>Axel Springer Neubau</h4><p>Photographie extérieure du bâtiment OMA et de l’ancien siège voisin.</p><button data-plan-id="10">Voir la fiche</button></section></div>
+      <div class="transport-step"><time>8 h 10</time><section><h4>Axel Springer → Messe Berlin</h4><p>Marche vers Spittelmarkt, U2 jusqu’à Kaiserdamm, puis marche vers l’entrée du salon.</p></section></div>
+      <div><time>9–18 h</time><section><h4>InnoTrans</h4><p>Journée complète sur le salon.</p><button data-plan-id="75">Voir Messe Berlin</button></section></div>
+      <div class="transport-step"><time>18 h</time><section><h4>Messe Berlin → Potsdamer Platz</h4><p>S-Bahn vers le centre avec correspondance selon la liaison du moment.</p></section></div>
+      <div><time>19 h</time><section><h4>Sony Center</h4><p>Toiture et structures éclairées à la tombée de la nuit.</p><button data-plan-id="26">Voir la fiche</button></section></div>
+      <div><time>Option</time><section><h4>Philharmonie & Kulturforum</h4><p>Courte boucle extérieure uniquement si la fatigue le permet.</p><button data-plan-id="23">Voir la Philharmonie</button></section></div>
+      <div class="transport-step"><time>Retour</time><section><h4>Potsdamer Platz → Hôtel</h4><p>S-Bahn ou U-Bahn vers Mitte et Rosenthaler Platz.</p></section></div>
+    </div></article>
+
+    <article class="day-card"><header><div class="date-box"><b>24</b><span>JEU.</span></div><div><small>JOUR 5 · INNOTRANS & BIBLIOTHÈQUE</small><h3>Messe Berlin & bibliothèque philologique</h3><p>Matinée calme, salon, puis véritable visite intérieure à Dahlem.</p></div></header><div class="timeline">
+      <div class="transport-step"><time>8 h</time><section><h4>Hôtel → Messe Berlin</h4><p>Trajet habituel en transports publics vers Messe Nord/ICC.</p></section></div>
+      <div><time>9–18 h</time><section><h4>InnoTrans</h4><p>Journée complète sur le salon.</p><button data-plan-id="75">Voir Messe Berlin</button></section></div>
+      <div class="transport-step"><time>18 h</time><section><h4>Messe Berlin → Dahlem</h4><p>S-Bahn puis U3 vers Freie Universität (Thielplatz), suivie d’une courte marche.</p></section></div>
+      <div><time>19 h</time><section><h4>Bibliothèque philologique</h4><p>Visite intérieure et extérieure de la bibliothèque de Norman Foster. Ouverte jusqu’à 22 h en semaine.</p><button data-plan-id="5">Voir la fiche</button></section></div>
+      <div class="transport-step"><time>20 h 15</time><section><h4>Dahlem → Mitte</h4><p>U3 puis correspondance vers Rosenthaler Platz.</p></section></div>
+    </div></article>
+
+    <article class="day-card industrial-day"><header><div class="date-box"><b>25</b><span>VEN.</span></div><div><small>JOUR 6 · DÉPART</small><h3>Berlin → Hambourg</h3><p>Une journée allégée afin de garantir l’arrivée à Hambourg à 15 h 30.</p></div></header><div class="timeline">
+      <div><time>Matin</time><section><h4>Rangement et départ de l’hôtel</h4><p>Préparation des bagages, sans visite éloignée.</p><button data-plan-id="74">Voir l’hôtel</button></section></div>
+      <div><time>Option</time><section><h4>Passage rapide à InnoTrans</h4><p>Uniquement si votre présence est nécessaire et si l’horaire du train le permet.</p><button data-plan-id="75">Voir Messe Berlin</button></section></div>
+      <div class="transport-step"><time>Départ</time><section><h4>Vers Berlin Hauptbahnhof</h4><p>Trajet à ajuster selon le point de départ et l’horaire définitif du train.</p></section></div>
+      <div><time>15 h 30</time><section><h4>Arrivée à Hambourg</h4><p>Correspondance avec le programme du carnet Hambourg.</p></section></div>
+    </div></article>
   </div>
 </section>
 <section id="mapView" class="view"><div id="mapCategoryFilters" class="filter-chips"></div><div class="map-tools"><button id="fitBtn">Voir tous</button><button id="locateBtn">Me localiser</button></div><div id="map"></div><div id="mapStatus" class="status"></div></section>
 <section id="categoriesView" class="view"><div class="section-intro"><h2>Explorer par catégorie</h2><p>Les lieux sont réellement regroupés par type. Touchez « Voir sur la carte » pour n’afficher que ce groupe.</p></div><div id="categoryGroups"></div></section>
 <section id="quartersView" class="view"><div class="section-intro"><h2>Explorer par quartier</h2><p>Les lieux sont regroupés géographiquement, indépendamment de leur catégorie.</p></div><div id="quarterGroups"></div></section>
 </main>
-<dialog id="placeDialog"><button id="closeDialog" class="close" aria-label="Fermer">×</button><div class="dialog-photo-wrap"><img id="dialogPhoto" alt=""><div id="photoState" class="photo-state">Chargement de la photo…</div></div><div class="dialog-body"><div id="dialogCategory" class="card-category"></div><h2 id="dialogName"></h2><p id="dialogNote"></p><p id="dialogAddress" class="address"></p><div class="actions"><a id="googleLink" target="_blank" rel="noopener">Itinéraire Google Maps</a><a id="appleLink" target="_blank" rel="noopener">Itinéraire Plans</a></div><button id="nextPhoto" class="secondary" hidden>Autre photo</button><div class="photo-credit">Photos figées pour les 75 lieux ; aucune recherche d’image automatique.</div></div></dialog>
+<dialog id="placeDialog"><button id="closeDialog" class="close" aria-label="Fermer">×</button><div class="dialog-photo-wrap"><img id="dialogPhoto" alt=""><div id="photoState" class="photo-state">Chargement de la photo…</div></div><div class="dialog-body"><div id="dialogCategory" class="card-category"></div><h2 id="dialogName"></h2><p id="dialogNote"></p><p id="dialogAddress" class="address"></p><div class="actions"><a id="googleLink" target="_blank" rel="noopener">Itinéraire Google Maps</a><a id="appleLink" target="_blank" rel="noopener">Itinéraire Plans</a></div><button id="nextPhoto" class="secondary" hidden>Autre photo</button><div class="photo-credit">Photos figées pour les 76 lieux ; aucune recherche d’image automatique.</div></div></dialog>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script src="data.js"></script><script src="app.js"></script>
 </body></html>

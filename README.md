@@ -1,6 +1,14 @@
-# Berlin — Carnet Photo V5
+# Berlin — Carnet Photo V6
 
-Nouvelle version du carnet photo Berlin pour GitHub Pages, construite à partir de la V4.
+Nouvelle version du carnet photo Berlin avec planning du séjour du 20 au 25 septembre 2026.
+
+## Nouveautés V6
+- Planning compatible avec les journées de travail à InnoTrans.
+- Transports publics indiqués entre les étapes.
+- Un plan numéroté pour chaque journée.
+- Numéros correspondants dans le programme.
+- Bouton « Voir la fiche » sur les repères possédant une fiche.
+- Sélection prioritaire : James-Simon-Galerie, quartier gouvernemental, Ludwig Erhard Haus, Classic-Remise, Axel Springer Neubau, Sony Center et bibliothèque philologique.
 
 ## Nouveautés V5
 - Nouvelle page d’accueil éditoriale responsive.
@@ -12,12 +20,12 @@ Nouvelle version du carnet photo Berlin pour GitHub Pages, construite à partir 
 - Le contenu reste accessible si le moteur de carte externe ne charge pas.
 
 ## Base conservée de la V4
-- 75 lieux / 75 coordonnées.
+- 76 lieux / 76 coordonnées.
 - Carte Leaflet et filtres Carte / Catégories / Quartiers.
 - Catégories réellement regroupées et quartiers réellement regroupés.
 - Pictogrammes distincts par catégorie, dans l’esprit de l’application Hambourg.
 - Repères du séjour distincts : ibis Styles Berlin Mitte et Messe Berlin.
-- 75/75 lieux ont désormais une photo figée (URL ou fichier Wikimedia précis) : aucune recherche d’image automatique au chargement.
+- 76/76 lieux ont désormais une photo figée (URL ou fichier Wikimedia précis) : aucune recherche d’image automatique au chargement.
 - Malzfabrik corrigée (photo du lieu, plus de résultat sans rapport).
 - Napoleon Komplex corrigé avec une photo provenant d’une page dédiée au lieu.
 - Cache PWA incrémenté (`berlin-v5-home-20260810`).

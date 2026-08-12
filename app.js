@@ -41,6 +41,29 @@ function renderMapCategoryFilters(){
 
 function renderAll(){const fp=filteredPlaces();renderMapCategoryFilters();$('#countLabel').textContent=`${fp.length} lieu${fp.length>1?'x':''} affiché${fp.length>1?'s':''} · ${PLACES.length} au total`;renderActiveFilters();grouped($('#categoryGroups'),'category',setCategory);grouped($('#quarterGroups'),'quarter',setQuarter);if(map)renderMarkers();}
 function renderFeatured(){const holder=$('#featuredPlaces');if(!holder)return;[59,13,52].map(id=>PLACES.find(p=>p.id===id)).filter(Boolean).forEach(p=>holder.appendChild(card(p)));}
+const DAY_ROUTES=[
+ {numbers:['1','1'],stops:[{id:74,mode:'walk'}]},
+ {numbers:['1 → 2','2','2 → 3','3 – 5','6 – 9','9 → 10','10','10 → 11','11','12 – 13'],stops:[{id:74,mode:'tram'},{id:34,mode:'tram'},{id:46,mode:'s'},{id:40,mode:'walk'},{id:73,mode:'walk'},{id:7,mode:'walk'},{id:39,mode:'walk'},{id:36,mode:'walk'},{id:6,mode:'walk'},{id:43,mode:'s'},{id:75,mode:'s'},{id:44,mode:'walk'},{id:16,mode:'walk'}]},
+ {numbers:['1 → 2','2','2 → 3','3','3 → 1'],stops:[{id:74,mode:'s'},{id:75,mode:'s'},{id:1,mode:'s'}]},
+ {numbers:['1 → 2','2','2 → 3','3','3 → 4','4','4 → 5','5 → 1'],stops:[{id:74,mode:'u'},{id:10,mode:'u'},{id:75,mode:'u'},{id:26,mode:'s'},{id:23,mode:'walk'}]},
+ {numbers:['1 → 2','2','2 → 3','3','3 → 1'],stops:[{id:74,mode:'s'},{id:75,mode:'s'},{id:5,mode:'u'}]},
+ {numbers:['1','1 → 2','2 → 3','3'],stops:[{id:74,mode:'s'},{id:75,mode:'s'},{name:'Berlin Hauptbahnhof',lat:52.5251,lng:13.3694,mode:'s'}]}
+];
+const ROUTE_MODES={walk:{label:'À pied',color:'#b06f43',dash:'4 7'},s:{label:'S-Bahn',color:'#2f7464'},u:{label:'U-Bahn',color:'#386ea8'},tram:{label:'Tram',color:'#b83a43',dash:'9 5'}};
+const dayMaps=new Map();
+function dayStop(raw){if(raw.id){const p=PLACES.find(x=>x.id===raw.id);return {...raw,name:p.name,lat:p.lat,lng:p.lng,place:p}}return raw;}
+function routePin(n){return L.divIcon({className:'',html:`<div class="route-pin"><span>${n}</span></div>`,iconSize:[28,28],iconAnchor:[14,28]});}
+function initPlanning(){
+  $$('[data-plan-id]').forEach(b=>b.onclick=()=>openPlace(PLACES.find(p=>p.id===Number(b.dataset.planId))));
+  $$('.day-card').forEach((card,index)=>{
+    const route=DAY_ROUTES[index];if(!route)return;
+    card.querySelectorAll('.timeline>div').forEach((step,i)=>{if(!route.numbers[i])return;const badge=document.createElement('span');badge.className='planning-route-number';badge.textContent=route.numbers[i];step.querySelector('section').prepend(badge)});
+    const toggle=document.createElement('button');toggle.type='button';toggle.className='day-map-toggle';toggle.innerHTML='<span>🗺</span><b>Voir le plan du jour</b>';card.querySelector('header').insertAdjacentElement('afterend',toggle);
+    const panel=document.createElement('div');panel.className='day-map-panel hidden';panel.innerHTML=`<div class="day-map" id="dayMap${index}"></div><div class="day-map-key"><span><i class="key-walk"></i>À pied</span><span><i class="key-s"></i>S-Bahn</span><span><i class="key-u"></i>U-Bahn</span><span><i class="key-tram"></i>Tram</span></div><p>Tracé général pour visualiser l’ordre des étapes. Les lignes et correspondances sont détaillées dans le planning.</p>`;toggle.insertAdjacentElement('afterend',panel);
+    toggle.onclick=()=>{const opening=panel.classList.contains('hidden');panel.classList.toggle('hidden');toggle.classList.toggle('open',opening);toggle.querySelector('b').textContent=opening?'Masquer le plan':'Voir le plan du jour';if(!opening)return;if(!dayMaps.has(index)){const points=route.stops.map(dayStop);const dm=L.map(`dayMap${index}`,{scrollWheelZoom:false}).setView([52.52,13.405],11);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(dm);points.forEach((stop,i)=>{const marker=L.marker([stop.lat,stop.lng],{icon:routePin(i+1)}).addTo(dm);if(stop.place)marker.bindPopup(`<div class="route-popup"><b>${i+1}. ${escapeHtml(stop.name)}</b><button type="button" data-route-place="${stop.place.id}">Voir la fiche</button></div>`);else marker.bindPopup(`<b>${i+1}. ${escapeHtml(stop.name)}</b>`)});for(let i=1;i<points.length;i++){const mode=ROUTE_MODES[points[i].mode]||ROUTE_MODES.walk;L.polyline([[points[i-1].lat,points[i-1].lng],[points[i].lat,points[i].lng]],{color:mode.color,weight:4,opacity:.82,dashArray:mode.dash||null}).bindTooltip(mode.label).addTo(dm)}if(points.length===1)dm.setView([points[0].lat,points[0].lng],14);else dm.fitBounds(points.map(p=>[p.lat,p.lng]),{padding:[24,24],maxZoom:14});dayMaps.set(index,dm)}setTimeout(()=>dayMaps.get(index).invalidateSize(),80)};
+  });
+}
+document.addEventListener('click',e=>{const button=e.target.closest('[data-route-place]');if(!button)return;const p=PLACES.find(x=>x.id===Number(button.dataset.routePlace));if(p)openPlace(p)});
 function markerIcon(p){const special=p.kind==='hotel'?'hotel':p.kind==='work'?'work':categoryClass(p.category);const symbol=p.kind==='hotel'?'🛏️':p.kind==='work'?'💼':categoryIcon(p.category);return L.divIcon({className:'custom-marker-wrap',html:`<div class="custom-marker ${special}"><span>${symbol}</span></div>`,iconSize:[32,38],iconAnchor:[16,34],popupAnchor:[0,-30]});}
 function initMap(){map=L.map('map',{zoomControl:true}).setView([52.52,13.405],11);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);markerLayer=L.layerGroup().addTo(map);renderMarkers();fitVisible(true);}
 function renderMarkers(){if(!markerLayer)return;markerLayer.clearLayers();const fp=filteredPlaces();fp.forEach(p=>{const m=L.marker([p.lat,p.lng],{icon:markerIcon(p)}).addTo(markerLayer);m.bindPopup(`<div class="popup-name">${escapeHtml(p.name)}</div><div class="popup-cat">${escapeHtml(p.category)} · ${escapeHtml(p.quarter)}</div><button class="popup-open" onclick="window.openPlaceById(${p.id})">Voir la fiche</button>`)});$('#mapStatus').textContent=`Carte : ${fp.length}/${fp.length} lieux affichés · ${PLACES.length}/${PLACES.length} positionnés`;}
@@ -110,5 +133,6 @@ $('#search').addEventListener('input',e=>{searchText=e.target.value.trim().toLow
 let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('#installBtn').hidden=false});$('#installBtn').onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$('#installBtn').hidden=true}};
 if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').then(r=>r.update()).catch(()=>{});
 renderFeatured();
+initPlanning();
 if(typeof L!=='undefined'){try{initMap()}catch(e){$('#mapStatus').textContent='La carte est momentanément indisponible. Les lieux restent accessibles par catégories et quartiers.'}}else{$('#mapStatus').textContent='La carte nécessite une connexion. Les lieux restent accessibles par catégories et quartiers.'}
 renderAll();

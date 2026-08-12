@@ -1,4 +1,4 @@
-const CACHE='berlin-v5-home-20260810';
+const CACHE='berlin-v6-jewish-museum-20260812';
 const CORE=['./','./index.html','./leaflet-fallback.css','./style.css','./data.js','./app.js','./manifest.webmanifest','./icon-180.png','./icon-512.png'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
